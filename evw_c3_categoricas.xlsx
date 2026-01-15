@@ -1,0 +1,70 @@
+﻿"etiqueta","variable","valor","n","%"
+"Otros","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites",38,92.7
+"Cluster3","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites",3,7.3
+"Otros","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites",174,86.6
+"Cluster3","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites",27,13.4
+"Otros","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Normal",252,83.4
+"Cluster3","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Normal",50,16.6
+"Otros","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal",31,77.5
+"Cluster3","Análisis_multimérico_alta_LC1_resum","Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal",9,22.5
+"Otros","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros",38,80.9
+"Cluster3","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros",9,19.1
+"Otros","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular",156,84.8
+"Cluster3","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular",28,15.2
+"Cluster3","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Disminución global de todos los multiméricos",1,100
+"Otros","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Normal",270,86.5
+"Cluster3","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Normal",42,13.5
+"Otros","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Smear",31,77.5
+"Cluster3","Análisis_multimérico_baja_LC1_resum","Análisis_multimérico_baja_LC1_resum_Smear",9,22.5
+"Otros","Grupo_VWD","VWD1",185,85.6
+"Cluster3","Grupo_VWD","VWD1",31,14.4
+"Otros","Grupo_VWD","VWD3",38,65.5
+"Cluster3","Grupo_VWD","VWD3",20,34.5
+"Otros","Grupo_VWD","VWD_2A",110,84
+"Cluster3","Grupo_VWD","VWD_2A",21,16
+"Otros","Grupo_VWD","VWD_2B",40,97.6
+"Cluster3","Grupo_VWD","VWD_2B",1,2.4
+"Otros","Grupo_VWD","VWD_2M",83,96.5
+"Cluster3","Grupo_VWD","VWD_2M",3,3.5
+"Otros","Grupo_VWD","VWD_2N",15,93.8
+"Cluster3","Grupo_VWD","VWD_2N",1,6.2
+"Otros","Grupo_VWD",NA,24,66.7
+"Cluster3","Grupo_VWD",NA,12,33.3
+"Otros","Grupo_sanguíneo","0",282,87.9
+"Cluster3","Grupo_sanguíneo","0",39,12.1
+"Otros","Grupo_sanguíneo","A",181,92.3
+"Cluster3","Grupo_sanguíneo","A",15,7.7
+"Otros","Grupo_sanguíneo","AB",9,60
+"Cluster3","Grupo_sanguíneo","AB",6,40
+"Otros","Grupo_sanguíneo","B",23,44.2
+"Cluster3","Grupo_sanguíneo","B",29,55.8
+"Otros","Género","Femenino",266,82.1
+"Cluster3","Género","Femenino",58,17.9
+"Otros","Género","Masculino",229,88.8
+"Cluster3","Género","Masculino",29,11.2
+"Cluster3","Género","No asignado _ especificado",2,100
+"Otros","Severidad","Alta",170,88.1
+"Cluster3","Severidad","Alta",23,11.9
+"Otros","Severidad","Baja",167,79.9
+"Cluster3","Severidad","Baja",42,20.1
+"Otros","Severidad","Media",157,88.2
+"Cluster3","Severidad","Media",21,11.8
+"Otros","Severidad",NA,1,25
+"Cluster3","Severidad",NA,3,75
+"Cluster3","Tipo_VWD","Portador_a_VWD_2N",12,100
+"Otros","Tipo_VWD","Portador_a_VWD_3",24,100
+"Otros","Tipo_VWD","VWD_1",143,88.3
+"Cluster3","Tipo_VWD","VWD_1",19,11.7
+"Otros","Tipo_VWD","VWD_1H",42,77.8
+"Cluster3","Tipo_VWD","VWD_1H",12,22.2
+"Otros","Tipo_VWD","VWD_2A",110,84
+"Cluster3","Tipo_VWD","VWD_2A",21,16
+"Otros","Tipo_VWD","VWD_2A_2M",31,91.2
+"Cluster3","Tipo_VWD","VWD_2A_2M",3,8.8
+"Otros","Tipo_VWD","VWD_2B",40,97.6
+"Cluster3","Tipo_VWD","VWD_2B",1,2.4
+"Otros","Tipo_VWD","VWD_2M",52,100
+"Otros","Tipo_VWD","VWD_2N",15,93.8
+"Cluster3","Tipo_VWD","VWD_2N",1,6.2
+"Otros","Tipo_VWD","VWD_3",38,65.5
+"Cluster3","Tipo_VWD","VWD_3",20,34.5

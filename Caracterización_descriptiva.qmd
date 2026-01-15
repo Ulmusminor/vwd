@@ -1,0 +1,144 @@
+---
+title: "Caracterización descriptiva"
+author: "Marco del Olmo"
+format:
+  html:
+    self-contained: true
+editor: visual
+---
+
+#### Librerías utilizadas
+
+```{r message=FALSE}
+library("tidyverse")
+library("factoextra")
+library("knitr")
+
+set.seed(6072000)
+```
+
+## Preámbulo
+
+Hemos identificado un grupo difuso central que no diferencia tipos VWD en un clústering, atendiendo al informe de ValidaciónEVW.odp. Este grupo difuso en principio mantendrá las características fisiológicas y genéticas de sus integrantes por subtipo EWD, pero vamos a verificarlo por si acaso.
+
+## Definición formal de cada uno de los grupos:
+
+En primer lugar, importamos el archivo con el clústering correspondiente:
+
+```{r}
+t <- read_csv("clustering_evw.txt")
+
+t_etiq <- t |> 
+  select(-Puntuacion_Hemorragica) |> 
+  mutate(etiqueta = ifelse(clusteres == 3, "Cluster3", "Otros") |> as_factor())
+```
+
+Los individuos del clúster de interés:
+- Pertenecen al grupo identificado como clúster 3 a través de la función MClust
+- Son `{r} t_etiq |> filter(etiqueta == "Cluster3") |> nrow()` individuos.
+
+```{r}
+t_etiq |> filter(etiqueta == "Cluster3")
+```
+
+
+Los individuos para comparar:
+- Son todos los demás, se pueden observar a continuación:
+
+```{r}
+t_etiq |> filter(etiqueta == "Otros")
+```
+
+
+## Variables que vamos a observar.
+
+Son las siguientes:
+
+```{r}
+t_etiq |> select(1:17) |> summary()
+```
+
+## 3. Estadísticas descriptivas:
+
+De las numéricas:
+
+```{r}
+t_etiq |> 
+  summarise(
+    across(where(is.numeric), 
+           ~ paste0(round(mean(.x, na.rm = TRUE), 2), 
+                    " ± ", 
+                    round(sd(.x, na.rm = TRUE), 2))),
+    .by = etiqueta
+  ) |> 
+  pivot_longer(
+    cols = -etiqueta,
+    names_to = "variable",
+    values_to = "valor+DE"
+  ) |> 
+  arrange(variable, etiqueta, 'valor+DE') |> 
+  kable(
+    caption = "Resumen de variables numéricas por grupo",
+    align = "c"
+  )
+```
+
+De las categóricas:
+
+```{r}
+t_etiq |> 
+  pivot_longer(
+    cols = where(~ is.factor(.) | is.character(.)) & !etiqueta,
+    names_to = "variable",
+    values_to = "valor"
+  ) |> 
+  summarise(n = n(), .by = c(etiqueta, variable, valor)) |> 
+  mutate('%' = round(n / sum(n) * 100, 1), .by = c(etiqueta, variable)) |> 
+  arrange(variable, valor, etiqueta) |> 
+  kable(
+    caption = "Resumen de variables categóricas por grupo",
+    align = "c"
+  )
+```
+
+```{r}
+t_conteo <- t_etiq |> 
+  pivot_longer(
+    cols = where(~ is.factor(.) | is.character(.)) & !etiqueta,
+    names_to = "variable",
+    values_to = "valor"
+  ) |> 
+  dplyr::count(variable, valor, etiqueta) |> 
+  mutate(pctje = round(n / sum(n) * 100, 1), .by = c(etiqueta, variable))
+
+universe <- t_conteo |> 
+  select(variable, valor) |> 
+  distinct()
+
+t_completo <- t_conteo |> 
+  right_join(universe, by = c("variable", "valor")) |> 
+  group_by(variable, valor) |> 
+  complete(etiqueta, fill = list(n = 0)) |> 
+  ungroup()
+```
+
+```{r}
+ggplot(t_completo |>   mutate(pctje = if_else(row_number() == 40, 13, pctje)), aes(x = valor, y = pctje, fill = etiqueta)) +
+    geom_col(position = "dodge") +
+    facet_wrap(~ variable, scales = "free_x") +
+    labs(
+        x = "Valor",
+        y = "Count",
+        fill = "Etiqueta"
+    ) +
+    theme_minimal()
+```
+
+```{r}
+t_etiq |> 
+  select(etiqueta, Grupo_sanguíneo) |> 
+  mutate(tipoB = ifelse(Grupo_sanguíneo == 'B', 'B', 'Not B')) |> 
+  select(-Grupo_sanguíneo) |> 
+  table()
+```
+

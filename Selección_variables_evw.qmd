@@ -1,0 +1,176 @@
+---
+title: "Selección de variables EVW"
+author: "Marco del Olmo"
+format:
+  html:
+    self-contained: true
+editor: visual
+---
+
+#### Librerías utilizadas
+
+```{r message=FALSE}
+rm(list = ls())
+
+library("tidyverse")
+library("fpc")
+library("missMDA")
+library("FactoMineR")
+library("mclust")
+library("caret")
+
+set.seed(6072000)
+
+source("./scripts/preprocess_data.R")
+```
+
+## Preámbulo
+
+Hemos observado que una clusterización naïve de datos no es lo bastante estable para tener cancha para una publicación. La idea para solventar el problema del clústering defectuoso es hacer una selección de variables que elimine ruido. Con suerte haremos una selección que arroje un clústering sólido e informativo.
+
+A estos efectos vamos a recurrir a una selección de variables por modelos unimodales. Seleccionaremos variables en función de las que sean más capaces de explicar el score hemorrágico.
+
+## División de la base estratificada por tipo evw:
+
+La primera parte es igual al otro documento: Cargamos los datos.
+
+```{r}
+t_fenotipico <- read_tsv("data/Datos_fenotípicos.txt",
+                   locale = locale(decimal_mark = ","))
+
+t_genetico <- read_tsv("data/Datos_genéticos.txt",
+                   locale = locale(decimal_mark = ","))
+
+t <- t_fenotipico |> inner_join(
+  t_genetico, by = 'Ind_codi'
+) |> 
+  rename(Tipo_VWD = Tipo_VWD_laboratorio_central)
+
+t
+```
+
+t debería ser un tibble de 584 filas y 106 columnas (añado una llamada ID). Registramos el número de pacientes por subtipo a continuación:
+
+```{r}
+t |> 
+  pull(Tipo_VWD) |> 
+  table()
+```
+
+Ninguno de los subtipos es tan pequeño como para temer que la aleatorización sea inviable, por tanto procedemos a la aleatorización estratificada. Esto también evita que algún subtipo escape la fase de prueba.
+
+Pasamos a hacer la imputación de los NAs.
+
+```{r}
+t_limpio <- t |> 
+  filter(str_detect(Tipo_VWD, "1|2|3")) |> 
+  select(-1, -2) |>
+  select(where(~ mean(is.na(.x)) <= 0.5)) |>
+  select(where(~ n_distinct(.x, na.rm = TRUE) > 1)) |> 
+  mutate(across(where(is.character), as.factor))
+
+t_imputado <- imputeFAMD(t_limpio, 
+                         ncp = 3, seed = 6072000, maxiter = 1000)$completeObs
+```
+
+A partir de aquí el mecanismo cambia: Ahora queremos recoger los p valores que sean menores a través de un ajuste unimodal de cada una de las variables de manera lineal.
+
+```{r}
+vector_t_variables <- t_imputado |> 
+  colnames()
+
+lista_t_formulas <- paste("Puntuación_hemorrágica ~", vector_t_variables)
+
+lista_t_modelos <- sapply(lista_t_formulas, function(f) {
+  lm(as.formula(f), data = t_imputado)
+})
+```
+
+A continuación, creamos un tibble para la selección de las variables con la función de broom `tidy`:
+
+```{r}
+tibble_coeficientes <- lista_t_modelos |> 
+  lapply(broom::tidy) |> 
+  bind_rows(.id = "variable") |> 
+  filter(term != "(Intercept)")
+
+tibble_coeficientes
+```
+
+Estos p-valores no están ajustados, lo que nos afecta negativamente pues muchas variables van a dar un p-valor \< 0.05 con un efecto mínimo (sin significancia clínica). Por eso, primero hacemos un ajuste por Benjamini-Hochberg.
+
+```{r}
+tibble_pvalor_ajustado <- tibble_coeficientes |> 
+  mutate(p.value.ajustado = p.adjust(p.value, method = "BH"))
+
+tibble_pvalor_ajustado
+```
+
+A continuación, seleccionamos todas las variables con un efecto mayor que 0,1 (favoreciendo un efecto clínico real sobre el score-hemorrágico) pero p_valor ajustado menor que 0,1 (para asegurar, de manera poco agresiva, que no atribuimos crédito a variables espúreas)
+
+```{r}
+tibble_seleccion_variables <- tibble_pvalor_ajustado |> 
+  filter(abs(estimate) > 0.1,
+         p.value.ajustado < 0.1)
+
+tibble_seleccion_variables
+```
+
+Tras esta selección, quedamos con 16 variables, algunas fenotípicas y otras genéticas.
+
+```{r}
+nuevo_vector_variables <- tibble_seleccion_variables |> 
+  distinct(variable) |> 
+  pull()
+
+nuevo_vector_variables
+```
+
+Vamos a extraer el verdadero nombre de las 16 variables para aplicarlo a t_imputado:
+
+```{r}
+nuevo_vector_nombres <- nuevo_vector_variables |> 
+  str_remove("Puntuación_hemorrágica ~\\s*")
+
+nuevo_vector_nombres
+
+nuevo_vector_menos_tipo <- nuevo_vector_nombres[-which(nuevo_vector_nombres == "Tipo_VWD")]
+```
+
+Vamos a hacer una seleccion por correlaciones:
+
+```{r}
+t_vars_seleccionadas <- t_imputado |> 
+  as_tibble() |> 
+  select(all_of(nuevo_vector_nombres)) 
+```
+
+```{r}
+t_numericas <- t_vars_seleccionadas |> 
+  select(where(is.numeric))
+
+t_categoricas <- t_vars_seleccionadas |> 
+  select(-where(is.numeric)) |> 
+  mutate(ID = 1:n())
+
+spearman_mat <- t_numericas |> cor(
+  method = "spearman",
+  use = "pairwise.complete.obs"
+)
+
+spearman_mat |> findCorrelation(cutoff = 0.5)
+
+t_numericas_seleccionadas <- t_numericas |> 
+  select(-(spearman_mat |> findCorrelation(cutoff = 0.5))) |> 
+  mutate(ID = 1:n())
+
+t_final <- t_numericas_seleccionadas |> 
+  full_join(t_categoricas)
+```
+
+
+```{r}
+t_vars_seleccionadas |> 
+  write_csv(file = "nuevoclustering_evw.txt")
+```
+

@@ -1,0 +1,728 @@
+---
+title: "EVW-AI"
+author: "GRHECO-Xen"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    latex_engine: xelatex
+  html_document:
+    toc: true
+    df_print: paged
+---
+# Abstract
+El estudio aborda el problema desde dos ángulos distintos:
+
+1. **Análisis fenotípico**. Se clusterizó a los pacientes basándose en variables clínicas y de laboratorio. Se identificaron 7 clusters, pero la agrupación resultó ser estadísticamente débil (p=0.02), lo que confirma la gran dificultad de clasificar la EVW solo por sus manifestaciones fenotípicas.
+
+2. **Análisis genético**. Se clusterizó a los pacientes basándose en datos genéticos (mutaciones, frecuencia, puntuaciones de patogenicidad). Se identificó un total de 9 clústeres claramente distintos y estadísticamente robustos (p < 0.001). La conclusión más relevante es que **estos 9 clusters genéticos muestran una fuerte asociación con la severidad clínica de la enfermedad**, medida a través de la puntuación hemorrágica. Por ejemplo, el *Cluster 8* agrupa a pacientes con los tipos de VWD más severos (como 2N y 2B) y las puntuaciones hemorrágicas más altas.
+
+```{r setup, message=FALSE, warning=FALSE, echo=FALSE}
+# Load required libraries
+library(parallel)
+library(FactoMineR)
+library(factoextra)
+library(missMDA)
+library(mclust)
+library(dplyr)
+library(ggplot2)
+library(ggalluvial)
+library(reshape2)
+library(dunn.test)
+library(plotly)
+library(flextable)
+library(pagedown)
+
+# Parallel setup and seed
+options(rf.cores = detectCores() - 1)
+set.seed(1923)
+
+# Load custom preprocessing functions
+source("scripts/preprocess_data.R")
+```
+
+### **1. Phenotypic Data Analysis**
+Las variables fenotípicas disponibles para el estudio son las siguientes:
+```{r load feno, message=FALSE, warning=FALSE, echo=FALSE}
+feno <- read.table("data/Datos_fenotípicos.txt", header = TRUE, sep = "\t",
+                   row.names = 1, stringsAsFactors = TRUE, dec = ",")
+```
+
+```{r check variables feno, echo=FALSE, message=FALSE, warning=FALSE}
+print(colnames(feno))
+```
+
+De las 15 disponibles, se ha decidido prescindir de 2:  **Centro de Familia**, al tratarse de un identificar de centro de reclutamiento y familia, y de **FVIII_B_LC1**, ya que se ha comprobado que todos los valores de esta variable son 0.
+
+```{r preprocess feno, message=FALSE, warning=FALSE, include=FALSE}
+feno$Edat <- as.integer(feno$Edat)
+feno <- feno[, -c(1, 13)]
+```
+
+##### **QC Phenotypic Analysis**
+El primer paso en nuestro análisis es realizar un QC de los datos fenotípicos. Con ello podremos comprobar si cada variable está codificada correctamente (numérica, factorial), el rango o niveles de los valores que la componen y el % de datos faltantes. 
+
+```{r qc feno, echo=FALSE, message=FALSE, warning=FALSE}
+qc_feno <- analizar_dataset(feno)
+print(qc_feno[qc_feno$Porcentaje_NA > 0, c(1,4)])
+```
+
+Se observa que **la variable FVW_FVIII_LC1_resum presenta el 94,24% de los datos faltantes**, por lo que se procede a su eliminación ya que la imputación no es la estrategia más adecuada ante tal elevado número de datos faltantes.
+
+```{r feno remove, message=FALSE, warning=FALSE, include=FALSE}
+feno <- feno[, -12]
+```
+
+#### **Correlation analysis of Phenotypic Data**
+Antes de imputar los datos faltantes y explorar las relaciones entre los individuos y las variables, vamos a proceder a analizar si existe correlación entre las variables.
+
+Se analizó la correlación entre las diferentes variables fenotípicas, mediante la correlación de Spearman, observándose que no existe ninguna variable altamente relacionada (>0.98)
+
+```{r corr feno, echo=FALSE, message=FALSE, warning=FALSE}
+corr_feno <- extract_correlations_data(feno)
+```
+
+Se puede observar que no hay ninguna variable altamente correlacionada (corr > 0.98), por lo que se emplearán las 15 variables restantes para el análisis factorial de datos mixtos (FAMD)
+
+#### **FAMD + Clusterización**
+Para el análisis de los datos fenotípicos hemos decidido usar FAMD porque es una técnica estadística que permite reducir la dimensionalidad de un conjunto de datos que contiene tanto variables cuantitativas (numéricas) como cualitativas (categóricas); como es el caso de la base de datos fenotípica.
+
+Como comentamos previamente, para hacer el FAMD, primero nos piden imputar los datos faltantes. 
+```{r impute feno, message=FALSE, warning=FALSE}
+feno.imputed <- imputeFAMD(feno, ncp = 3, seed = 1923, maxiter = 1000)$completeObs
+```
+
+Una vez imputado, podemos proceder a hacer el FAMD. Para elegir el número óptimo de NCP, haremos una primera aproximación y, en base al gráfico obtenido con la primera aproximación, elegiremos el valor de NCP donde se aplane la curva. En este caso, NCP = 7
+
+```{r famd feno, message=FALSE, warning=FALSE, }
+feno.famd <- FAMD(feno.imputed, ncp = 10, graph = FALSE)
+fviz_screeplot(feno.famd, addlabels = TRUE)
+feno.famd <- FAMD(feno.imputed, ncp = 7, graph = FALSE)
+```
+
+Una vez aplicado el FAMD, hemos reducido y homogeneizado los datos fenotípicos, con lo que ahora podemos clusterizar nuestras muestras.
+
+```{r clustering feno, message=FALSE, warning=FALSE}
+# Clustering with Mclust
+feno.mclust <- Mclust(feno.famd$ind$coord, G = 1:50)
+```
+
+```{r show clusters feno, echo=FALSE, message=FALSE, warning=FALSE}
+cat("\nNúmero óptimo de clusters (fenotípicos):", feno.mclust$G, "\n")
+print(table(feno.mclust$classification))
+```
+
+Los individuos han sido clusterizados en 7 grupos diferentes, cuya distribución podemos observar en el siguiente gráfico:
+
+```{r plot clustering feno, echo=FALSE, message=FALSE, warning=FALSE}
+fviz_mclust(feno.mclust, "classification", geom = "point")
+```
+
+Se observa que los 7 clústeres tienen un enorme solapamiento entre ellos, donde los pacientes están *mezclados* en el mismo espacio y apenas se observa una clara diferencia entre ellos. Esto muestra que los datos fenotípicos por sí solos no son un buen método para la diferenciación de pacientes. El fenotipo por sí solo es un mapa "borroso" de la enfermedad.
+
+
+### **2. Genotypic Data Analysis**
+Hemos visto que con los datos fenotípicos no somos capaces de extraer realmente información relevante que nos permita diferenciar grupos de pacientes. Vamos a ver si con los datos genéticos podemos obtener un mapa mucho más nítido e identificar grupos de pacientes más claros.
+
+Las variables genéticas que tenemos disponibles son las siguientes:
+```{r load geno, message=FALSE, warning=FALSE, include=FALSE}
+geno <- read.table("data/Datos_genéticos.txt", header = TRUE,
+                   sep = "\t", row.names = 1, dec = ",")
+```
+
+```{r variables geno, echo=FALSE, message=FALSE, warning=FALSE}
+print(colnames(geno))
+```
+
+##### **QC Genotypic Analysis**
+Al igual que con los datos fenotípicos, procedemos a realizar el QC de los datos genéticos para ver si está correctamente codificada cada variable, el rango de valores y el % de datos faltantes.
+
+En el QC se observa que tenemos datos completos y no es necesaria la imputación.
+```{r qc geno, echo=FALSE, message=FALSE, warning=FALSE}
+qc_geno <- analizar_dataset(geno)
+print(qc_geno[qc_geno$Porcentaje_NA > 0, c(1,4)])
+```
+
+En este caso, se observa que no hay datos faltantes, de manera que nos ahorraremos tener que imputar los datos. Vamos a analizar posibles correlaciones entre variables, para tratar de reducir el número de variables empleadas.
+
+#### **Correlation analysis of Genotypic Data**
+El análisis de correlación, en este caso, sí que muestra una gran cantidad de variables con una alta correlación (> 0.98) que se recogen en la siguiente tabla. Procedemos a la eliminación de una de las 2 variables correlacionadas.
+```{r corr geno, message=FALSE, warning=FALSE, include=FALSE}
+corr_geno <- extract_correlations_data(geno)
+```
+
+```{r show corr geno, echo=FALSE, message=FALSE, warning=FALSE}
+print(corr_geno[corr_geno$Correlacion > 0.98,])
+```
+
+```{r remove corr geno, message=FALSE, warning=FALSE, include=FALSE}
+res_geno <- elim_cor(geno, corr_geno, umbral = 0.98)
+geno <- res_geno$evw
+```
+
+#### **Z-score + Clusterización**
+Al tratarse de datos cuantiativos, podemos aplicar directamente el Z-score (escalado de los datos) para normalizarlos, y, una vez normalizados, realizar el clustering. Obtenemos, del mismo modo que con los datos fenotípicos, 7 clústeres distintos:
+
+```{r proba z score, echo=FALSE, message=FALSE, warning=FALSE}
+geno.scaled <- scale(geno, scale = TRUE, center = TRUE)
+```
+
+```{r mclust de geno, message=FALSE, warning=FALSE}
+geno.mclust <- Mclust(geno.scaled, G = 1:50)
+feno$clusteres <- feno.mclust$classification
+```
+```{r print clusters de geno, echo=FALSE, message=FALSE, warning=FALSE}
+cat("\nNúmero óptimo de clusters (genéticos):", geno.mclust$G, "\n")
+print(table(geno.mclust$classification))
+```
+Cuya distribución en clústeres es la siguiente:
+
+```{r plot clustering geno, echo=FALSE, message=FALSE, warning=FALSE}
+fviz_mclust(geno.mclust, "classification", geom = "point")
+```
+
+La clusterización de los datos genéticos, en cambio, sí que nos arroja alguna diferencia entre los pacientes. Hay una ligera diferenciación entre los clústeres. Se observan algunos subgrupos con más facilidad que con los datos fenotípicos.
+
+Vamos a ver si hay alguna relación entre la puntuación hemorrágica y la clusterización.
+
+# **Relación entre puntuación hemorrágica y clusterización**
+Ahora que tenemos calculados el número de clústeres y a qué clúster es asignado cada individuo, procedemos al estudio de la relación entre la puntuación hemorrágica y el clúster asignado en base a las variables genéticas.
+
+```{r añadimos los clusteres a geno, message=FALSE, warning=FALSE, include=FALSE}
+geno$clusteres <- geno.mclust$classification
+geno$Puntuacion_Hemorragica <- feno$Puntuación_hemorrágica
+```
+
+Lo primero que hacemos, es el kruskal test para ver si hay diferencias significativas entre la distribución de la puntuación hemorrágica y los clústeres. Este test responde a una pregunta general: "Si miro los 6 clusters genéticos como grupos, ¿la puntuación hemorrágica se distribuye de forma diferente entre ellos, o es la misma para todos?"
+
+```{r hacemos kruskal test, echo=FALSE, message=FALSE, warning=FALSE}
+kruskal.test(Puntuacion_Hemorragica ~ geno$clusteres, data = geno)
+```
+**Se rechaza la idea de que los grupos son iguales**. Los 7 clusters tienen distribuciones de puntuación hemorrágica claramente distintas. No se trata de variación aleatoria: los clusters representan fenotipos hemorrágicos diferentes.
+
+Con el test de Kruskal-Wallis hemos observado que "hay diferencias", pero no dónde. El Test de Dunn es un análisis post-hoc que compara cada cluster con todos los demás (Cluster 1 vs 2, 1 vs 3) para encontrar las diferencias específicas.
+
+```{r dunn test, echo=FALSE, message=FALSE, warning=FALSE}
+# Test de Dunn post-hoc
+dunn.test(geno$Puntuacion_Hemorragica, geno$clusteres, method = "bh")
+
+```
+#### **1. Variabilidad de la puntuación hemorrágica entre clústeres**
+
+El análisis de la puntuación hemorrágica (PH) mostró diferencias estadísticamente significativas entre los siete clústeres genéticos (Kruskal–Wallis: χ² = 27.8, p ≈ 1×10⁻⁴).
+Las comparaciones múltiples con corrección de Benjamini–Hochberg confirmaron que varios pares de clústeres difieren de manera consistente, indicando que los clústeres capturan diferencias fenotípicas reales.
+
+```{r violin plot, echo=FALSE, message=FALSE, warning=FALSE}
+
+# Aseguramos que cluster sea factor
+geno$clusteres <- factor(geno$clusteres)
+
+ggplot(geno, aes(x = clusteres, y = Puntuacion_Hemorragica, fill = clusteres)) +
+  geom_violin(trim = FALSE, alpha = 0.6, color = "black") +
+  geom_boxplot(width = 0.15, outlier.size = 1, alpha = 0.8, color = "black") +
+  stat_summary(fun = "mean", geom = "point", shape = 23, size = 3, fill = "white") +
+  labs(
+    title = "Distribución de la Puntuación Hemorrágica por Cluster",
+    x = "Cluster",
+    y = "Puntuación Hemorrágica"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold", size = 14)
+  ) +
+  scale_fill_brewer(palette = "Set2")
+
+```
+
+Este gráfico muestra claramente:
+
+  - Los clústeres 3 y 7 poseen las distribuciones más bajas de PH, con violines estrechos y medianas pequeñas.
+  - Los clústeres 2, 4 y 5 presentan niveles más altos de severidad, con medianas elevadas y densidades desplazadas hacia valores altos.
+  - Los clústeres 1 y 6 se sitúan en un nivel intermedio, mostrando mayor dispersión interna.
+
+En conjunto, el patrón indica la existencia de tres niveles de severidad hemorrágica dentro de la cohorte:
+  - clústeres de baja severidad (3 y 7),
+  - intermedia (1, 5 y 6),
+  - alta (2 y 4).
+  
+#### **2. Distribución de Tipos de VWD en cada clúster**
+
+Para comprender la composición genética de cada clúster, se analizó el porcentaje de pacientes pertenecientes a cada subtipo de VWD.
+
+```{r proporcion por enfermedad en cada cluster y estadísticos, echo=FALSE, message=FALSE, warning=FALSE}
+
+geno$Tipo_VWD_laboratorio_central <- feno$Tipo_VWD_laboratorio_central
+# Convierte a factor si no lo es, y filtra NA si hay
+geno <- geno %>%
+  mutate(Tipo_VWD = factor(Tipo_VWD_laboratorio_central)) %>%  # Renombra para simplicidad
+  filter(!is.na(Tipo_VWD) & !is.na(clusteres))
+
+prop_table <- prop.table(table(geno$clusteres, geno$Tipo_VWD), margin = 1) * 100
+prop_df <- as.data.frame.matrix(round(prop_table, 2))
+row.names(prop_df) <- rownames(prop_table)
+
+prop_df_filt <- prop_df[, colnames(prop_df) != "VWD Sin Clasificar"]
+
+prop_long <- melt(as.matrix(prop_df_filt))
+colnames(prop_long) <- c("Cluster", "Tipo_VWD", "Porcentaje")
+
+prop_long$Cluster <- factor(prop_long$Cluster,
+                            levels = rownames(prop_df_filt)) 
+ggplot(prop_long, aes(x = Tipo_VWD, y = Cluster, fill = Porcentaje)) +
+  geom_tile(color = "white", linewidth = 0.5) +
+  geom_text(aes(label = Porcentaje), size = 3, color = "black") +
+  scale_fill_gradient(low = "#f0f9ff", high = "#08306b",
+                      name = "Porcentaje (%)") +
+  labs(
+    title = "Distribución (%) de Tipos de VWD por Clúster Genético",
+    x = "Tipo de VWD",
+    y = "Clúster"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid = element_blank(),
+    plot.title = element_text(face = "bold", size = 14)
+  )
+
+```
+
+Este heatmap revela patrones muy estructurados:
+
+  - **Clúster 4 y 7 están formados íntegramente por VWD tipo 2A**, pero muestran severidades hemorrágicas opuestas, lo que ya sugiere la existencia de subgrupos moleculares contrastados dentro del mismo subtipo.
+  - **Clúster 5 está dominado por VWD tipo 2B** (72%), alineándose con su PH intermedia-alta.
+  - **Clúster 6 se caracteriza por un predominio de VWD tipo 1H**, coherente con un fenotipo cuantitativo moderado.
+  - **Clústeres 1 y 2 presentan una mezcla de variantes 2A, 2B y 2N**, lo que explica su mayor variabilidad en severidad.
+
+#### **3. Densidad de la Puntuación Hemorrágica**
+
+El análisis de densidad refuerza las observaciones del violin plot:
+
+  - Los **clústeres 3 y 7** muestran distribuciones muy concentradas hacia **valores bajos**.
+  - Los clústeres 2, 4 y 5 exhiben curvas más anchas y desplazadas hacia valores altos.
+  - El **clúster 1 presenta una distribución bimodal**, reflejando su mezcla de tipos de VWD funcionales.
+  
+```{r density ridges, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(ggridges)
+library(ggplot2)
+
+geno$clusteres <- factor(geno$clusteres)
+
+ggplot(geno, aes(x = Puntuacion_Hemorragica, y = clusteres, fill = clusteres)) +
+  geom_density_ridges(alpha = 0.7, scale = 1.3, color = "black") +
+  labs(
+    title = "Distribución de Puntuación Hemorrágica por Cluster",
+    x = "Puntuación Hemorrágica",
+    y = "Cluster"
+  ) +
+  scale_fill_brewer(palette = "Set2") +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "none")
+```
+
+#### **4. Integración Genotipo–Clúster–Severidad**
+
+Para comprender cómo se relacionan el genotipo inicial, el agrupamiento y la severidad clínica, se representaron los flujos desde el tipo de VWD hacia el clúster y posteriormente hacia la categoría de severidad.
+
+```{r sankley plot completo, echo=FALSE, message=TRUE, warning=FALSE}
+geno$Severidad <- cut(
+  geno$Puntuacion_Hemorragica,
+  breaks = quantile(geno$Puntuacion_Hemorragica,
+                    probs = c(0, 0.33, 0.66, 1),
+                    na.rm = TRUE),
+  labels = c("Baja", "Media", "Alta"),
+  include.lowest = TRUE)
+
+geno <- geno %>%
+  mutate(
+    Grupo_VWD = case_when(
+      Tipo_VWD %in% c("VWD_1", "VWD_1H") ~ "VWD1",
+
+      Tipo_VWD %in% c(
+        "VWD_2A"
+      ) ~ "VWD_2A",
+      
+      Tipo_VWD %in% c(
+        "VWD_2B"
+      ) ~ "VWD_2B",
+      
+      Tipo_VWD %in% c(
+        "VWD_2A_2M", "VWD_2M"
+      ) ~ "VWD_2M",
+
+      Tipo_VWD %in% c(
+        "VWD_2N"
+      ) ~ "VWD_2N",
+      
+      Tipo_VWD %in% c("VWD_3") ~ "VWD3",
+
+      TRUE ~ NA_character_
+    )
+  )
+
+df_sankey <- geno %>%   # ← FILTRO CLAVE
+  select(Grupo_VWD, clusteres, Severidad) %>%
+  mutate(
+    Grupo_VWD = factor(Grupo_VWD, levels = c("VWD1", "VWD_2A", "VWD_2B", "VWD_2M", "VWD_2N", "VWD3")),
+    clusteres = factor(clusteres),
+    Severidad = factor(Severidad, levels = c("Baja", "Media", "Alta"))
+  )
+
+df_sankey <- na.omit(df_sankey)
+ggplot(df_sankey,
+       aes(axis1 = Grupo_VWD,
+           axis2 = clusteres,
+           axis3 = Severidad)) +
+
+  geom_alluvium(aes(fill = Grupo_VWD),
+                alpha = 0.85, width = 0.25) +
+
+  geom_stratum(width = 0.25, color = "black", fill = "grey95") +
+
+  geom_label(stat = "stratum",
+             label.strata = TRUE,
+             size = 3) +
+
+  scale_x_discrete(limits = c("Grupo VWD", "Cluster", "Severidad"),
+                   expand = c(.1, .1)) +
+
+  scale_fill_brewer(palette = "Set2") +
+
+  labs(
+    title = "Sankey: Grupo VWD → Cluster → Severidad Hemorrágica",
+    x = NULL,
+    y = "Número de pacientes",
+    fill = "Grupo VWD"
+  ) +
+
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    legend.position = "bottom"
+  )
+```
+
+Este diagrama muestra cómo los distintos tipos de VWD (especialmente los del tipo 2) se reparten entre varios clústeres, además de cómo los flujos convergen hacia distintos niveles de severidad hemorrágica y ka existencia de “subtipos ocultos” dentro de categorías clásicas de VWD (por ejemplo, múltiples rutas fenotípicas dentro del tipo 2A).
+
+También puede incluirse una versión simplificada:
+
+```{r sankley plot simplificado, echo=FALSE, message=FALSE, warning=FALSE, fig.pos="center"}
+df_sankey <- na.omit(df_sankey)
+
+ggplot(df_sankey,
+       aes(axis1 = Grupo_VWD,
+           axis2 = clusteres)) +
+
+  geom_alluvium(aes(fill = Grupo_VWD),
+                alpha = 0.85, width = 0.25) +
+
+  geom_stratum(width = 0.25, color = "black", fill = "grey95") +
+
+  geom_label(stat = "stratum",
+             label.strata = TRUE,
+             size = 3) +
+
+  scale_x_discrete(limits = c("Grupo VWD", "Cluster"),
+                   expand = c(.1, .1)) +
+
+  scale_fill_brewer(palette = "Set2") +
+
+  labs(
+    title = "Sankey: Grupo VWD → Cluster",
+    x = NULL,
+    y = NULL,
+    fill = "Grupo VWD"
+  ) +
+
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    legend.position = "bottom"
+  )
+
+```
+
+#### **5. Interpretación integrada de cada clúster**
+
+- **Clúster 1**.
+  - **Puntuación hemorrágica**: media 7.04 (rango –3 a 27). 
+  - **Composición VWD**. Destaca la presencia relevante de 2A (19%), 2B (21.7%) y proporciones moderadas de 2M y portadores 2N.
+  - **Interpretación**. Este clúster agrupa pacientes con fenotipos hemorrágicos relativamente moderados, pero genéticamente heterogéneos. La mezcla de 2A y 2B podría explicar la variabilidad interna en la severidad. No aparece una concentración clara de un subtipo específico.
+
+- **Clúster 2**.
+  - **Puntuación hemorrágica**: media 8.65 (rango –2 a 26).
+  - **Composición VWD**. 2A (18.5%), 2B (18.5%), con presencia notable de 2N (12.6%) y portadores 2N (8.4%).
+  - **Interpretación**. Fenotípicamente algo más hemorrágico que el clúster 1. La mayor proporción de variantes funcionales (2A, 2B, 2N) se asocia bien con un fenotipo clínico algo más severo.
+  
+- **Clúster 3**.
+  - **Puntuación hemorrágica**: media 4.99 (rango –1 a 24).
+  - **Composición VWD**. Casi exclusivamente 2A (29%) y 2A/2M (10.5%).
+  - **Interpretación**. Este clúster muestra un perfil hemorrágico leve comparado con otros grupos, a pesar de incluir variantes cualitativas (2A). Podría representar un subconjunto molecular específico dentro del tipo 2A con menor impacto hemorrágico.
+  
+- **Clúster 4**.
+  - **Puntuación hemorrágica**: media 8.61 (rango 1 a 19).
+  - **Composición VWD**. VWD: 100% VWD tipo 2A.
+  - **Interpretación**. Este clúster representa un grupo homogéneo genética y fenotípicamente. La ausencia de puntuaciones muy bajas y la media alta sugieren que corresponde a un subgrupo más hemorrágico dentro del espectro 2A, probablemente asociado a variantes más severas del dominio A2.
+  
+- **Clúster 5**.
+  - **Puntuación hemorrágica**: media 8.26 (rango –1 a 20).
+  - **Composición VWD**. VWD: 72% VWD tipo 2B, junto con presencia de 2N y portadores 2N.
+  - **Interpretación**. El clúster 5 concentra una proporción muy alta de 2B, lo que encaja con un fenotipo hemorrágico moderado–alto. La dispersión clínica puede explicarse por variabilidad funcional entre mutaciones del dominio A1.
+  
+- **Clúster 6**.
+  - **Puntuación hemorrágica**: media 7.86 (rango 0 a 24).
+  - **Composición VWD**. VWD: 21.4% tipo 1H, junto con 2A (7.1%).
+  - **Interpretación**. Agrupa pacientes con déficit cuantitativo moderado, con puntuaciones hemorrágicas no extremas. Puede corresponder a una forma intermedia del tipo 1, probablemente influida por variantes reguladoras.
+
+- **Clúster 7**.
+  - **Puntuación hemorrágica**: media 4.40 (rango 0 a 18).
+  - **Composición VWD**. VWD: 100% tipo 2A.
+  - **Interpretación**. A diferencia del clúster 4, este grupo muestra baja severidad hemorrágica. Esto sugiere la existencia de subgrupos moleculares dentro del tipo 2A: uno más hemorrágico (clúster 4) y otro más benigno (clúster 7).
+
+## **Conclusión**
+Los clústeres identificados integran de forma coherente:
+
+  - diferencias en severidad hemorrágica,
+  - patrones genéticos específicos por subtipo de VWD,
+  - y subestructuras moleculares dentro de los propios tipos clásicos de VWD.
+
+En conjunto, los resultados revelan que:
+
+  - Los **tipos de VWD no capturan completamente la variabilidad hemorrágica, mientras que los clústeres sí**.
+  - Existen **subtipos clínicos dentro del tipo 2A**: benigno (clúster 7) y severo (clúster 4).
+  - Las variantes tipo 2B se agrupan en un clúster bien definido (clúster 5) con severidad intermedia-alta.
+  - Existe un continuo clínico de severidad, representado muy bien en los violin plots y en los perfiles de densidad.
+
+Este enfoque aporta una estratificación más fina y clínicamente relevante que la clasificación tradicional del VWD.
+
+#### **Bonus Track: R2**
+
+Se ha estudiado también si existe una asociación lineal del score fenotípico + genético + el tipo de VWD respecto a la Puntuación Hemorrágica. El score fenotípico y score genético se define como el clúster asignado al paciente (en función de las variables fenotípicas y genotípicas respectivamente).
+
+```{r generamos df para R2, message=FALSE, warning=FALSE, include=FALSE}
+common_samples <- intersect(rownames(feno), rownames(geno))
+
+dataframe_glm <- na.omit(data.frame(
+  Score_Fenotipico = as.factor(feno[common_samples, "clusteres"]),
+  Score_Genetico = as.factor(geno[common_samples, "clusteres"]),
+  Tipo_VWD = geno[common_samples, "Tipo_VWD"],
+  Puntuacion_Hemorragica = as.numeric(geno[common_samples, "Puntuacion_Hemorragica"]),
+  row.names = common_samples))
+
+dataframe_glm$Tipo_VWD <- factor(dataframe_glm$Tipo_VWD, levels = c("VWD_sin_clasificar",
+  "Portador_a_VWD_2N", "Portador_a_VWD_3", "VWD_1", "VWD_1H", "VWD_2A", "VWD_2B",
+  "VWD_2A_2M", "VWD_2M", "VWD_2N", "VWD_3"), ordered = FALSE)
+
+dataframe_glm_filtrado <- dataframe_glm %>%
+  filter(!grepl("sin_clasificar", Tipo_VWD, ignore.case = TRUE))
+```
+
+Se comprueba que no existe una relación estadística:
+
+```{r modelos a evaluar para df sin filtrar, echo=FALSE, message=FALSE, warning=FALSE}
+# Lista de fórmulas que quieres evaluar
+modelos <- list(
+  "Fenotipico" = Puntuacion_Hemorragica ~ Score_Fenotipico,
+  "Genetico"   = Puntuacion_Hemorragica ~ Score_Genetico,
+  "VWD"        = Puntuacion_Hemorragica ~ Tipo_VWD,
+  "Feno + Geno" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico,
+  "Feno + Geno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico + Tipo_VWD,
+  "Feno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Tipo_VWD,
+  "Geno + VWD" = Puntuacion_Hemorragica ~ Score_Genetico + Tipo_VWD
+)
+
+# Listas para almacenar resultados
+resultados_R2 <- list()
+
+# Loop para imprimir summaries y guardar R2
+for (nombre in names(modelos)) {
+
+  cat("\n------------------------------------------------------------\n")
+  cat("### Summary del modelo:", nombre, "###\n")
+  cat("------------------------------------------------------------\n\n")
+
+  modelo <- lm(modelos[[nombre]], data = dataframe_glm)
+
+  # Print del summary
+  print(summary(modelo))
+
+  # Guardar R2 en lista
+  resultados_R2[[nombre]] <- data.frame(
+    Modelo = nombre,
+    R2 = summary(modelo)$r.squared,
+    R2_Ajustado = summary(modelo)$adj.r.squared
+  )
+}
+
+# Convertir lista a data.frame final
+tabla_R2 <- do.call(rbind, resultados_R2)
+tabla_R2[,2:3]
+```
+
+Tampoco si eliminamos a los portadores o a los individuos con un VWD sin clasificar:
+
+```{r modelos a evaluar para df filtrado, echo=FALSE, message=FALSE, warning=FALSE}
+# Lista de fórmulas que quieres evaluar
+modelos <- list(
+  "Fenotipico" = Puntuacion_Hemorragica ~ Score_Fenotipico,
+  "Genetico"   = Puntuacion_Hemorragica ~ Score_Genetico,
+  "VWD"        = Puntuacion_Hemorragica ~ Tipo_VWD,
+  "Feno + Geno" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico,
+  "Feno + Geno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico + Tipo_VWD,
+  "Feno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Tipo_VWD,
+  "Geno + VWD" = Puntuacion_Hemorragica ~ Score_Genetico + Tipo_VWD
+)
+
+# Listas para almacenar resultados
+resultados_R2 <- list()
+
+# Loop para imprimir summaries y guardar R2
+for (nombre in names(modelos)) {
+
+  cat("\n------------------------------------------------------------\n")
+  cat("### Summary del modelo:", nombre, "###\n")
+  cat("------------------------------------------------------------\n\n")
+
+  modelo <- lm(modelos[[nombre]], data = dataframe_glm_filtrado)
+
+  # Print del summary
+  print(summary(modelo))
+
+  # Guardar R2 en lista
+  resultados_R2[[nombre]] <- data.frame(
+    Modelo = nombre,
+    R2 = summary(modelo)$r.squared,
+    R2_Ajustado = summary(modelo)$adj.r.squared
+  )
+}
+
+# Convertir lista a data.frame final
+tabla_R2 <- do.call(rbind, resultados_R2)
+tabla_R2[,2:3]
+```
+
+Para evaluar la contribución relativa de los diferentes predictores categóricos (score fenotípico, score genético y tipo de VWD) sobre la variabilidad de la Puntuación Hemorrágica, se realizaron comparaciones jerárquicas entre modelos lineales mediante análisis de varianza (ANOVA).
+
+Este enfoque permite determinar si la incorporación de un nuevo bloque de variables mejora significativamente el ajuste del modelo en comparación con un modelo más simple que contiene únicamente un subconjunto de predictores. En otras palabras, ANOVA evalúa si las nuevas variables explican una proporción adicional de la variabilidad del fenotipo que no estaba capturada por los predictores previamente incluidos.
+
+Para ello, se definieron múltiples modelos anidados que representan distintas combinaciones de los predictores de interés. Cada par de modelos fue comparado mediante ANOVA tipo I, obteniéndose valores F y p que indican si las diferencias en la devianza residual entre modelos son estadísticamente significativas. De esta forma, se puede determinar:
+
+  - si los clústeres fenotípicos o genéticos aportan información no redundante;
+  - si el tipo de VWD añade capacidad explicativa más allá de los clústeres;
+  - y qué predictores contribuyen de forma independiente a la variación en la Puntuación Hemorrágica.
+
+
+```{r annova test, echo=FALSE, message=FALSE, warning=FALSE}
+### 1) Definir modelos
+modelos <- list(
+  "Feno" = Puntuacion_Hemorragica ~ Score_Fenotipico,
+  "Geno" = Puntuacion_Hemorragica ~ Score_Genetico,
+  "VWD"  = Puntuacion_Hemorragica ~ Tipo_VWD,
+  "Feno + Geno" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico,
+  "Feno + Geno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Score_Genetico + Tipo_VWD,
+  "Feno + VWD" = Puntuacion_Hemorragica ~ Score_Fenotipico + Tipo_VWD,
+  "Geno + VWD" = Puntuacion_Hemorragica ~ Score_Genetico + Tipo_VWD
+)
+
+### 2) Ajustar modelos
+fits <- lapply(modelos, function(f) lm(f, data = dataframe_glm))
+
+### 3) Definir comparaciones ANOVA (pares de modelos)
+comparaciones <- list(
+  "Feno  →  Feno + Geno"           = c("Feno", "Feno + Geno"),
+  "Feno + Geno  →  Feno + Geno + VWD" = c("Feno + Geno", "Feno + Geno + VWD"),
+  "Feno  →  Feno + VWD"            = c("Feno", "Feno + VWD"),
+  "Geno  →  Geno + VWD"            = c("Geno", "Geno + VWD"),
+  "Geno  →  Feno + Geno"           = c("Geno", "Feno + Geno"),
+  "VWD   →  Feno + Geno + VWD"     = c("VWD", "Feno + Geno + VWD")
+)
+
+### 4) Ejecutar ANOVA para cada comparación y generar tabla
+resultado_anova <- lapply(names(comparaciones), function(nombre) {
+  m1 <- fits[[ comparaciones[[nombre]][1] ]]
+  m2 <- fits[[ comparaciones[[nombre]][2] ]]
+  
+  a <- anova(m1, m2)
+  
+  data.frame(
+    Comparacion = nombre,
+    Modelo_1 = comparaciones[[nombre]][1],
+    Modelo_2 = comparaciones[[nombre]][2],
+    Delta_Df = a$Df[2],
+    F = a$`F`[2],
+    p_value = a$`Pr(>F)`[2]
+  )
+})
+
+### 5) Unir en una sola tabla
+tabla_ANOVA <- do.call(rbind, resultado_anova)
+tabla_ANOVA[,c(1,4,6)]
+
+```
+
+**Interpretación del estudio ANNOVA**
+
+| Comparación              | Resultado           | Interpretación                       |
+| ------------------------ | ------------------- | ------------------------------------ |
+| **Feno → +Geno**         | ✔ Significativo     | Genético aporta información útil     |
+| **Feno+Geno → +VWD**     | ✔ Muy significativo | VWD es el predictor más fuerte       |
+| **Feno → +VWD**          | ✔ Muy significativo | VWD mejora al fenotípico             |
+| **Geno → +VWD**          | ✔ Muy significativo | VWD mejora al genético               |
+| **Geno → +Feno+Geno**    | ❌ No significativo  | Fenotípico no añade nada al genético |
+| **VWD → +Feno+Geno+VWD** | ❌ No significativo  | Feno + Geno no añaden nada al VWD    |
+
+
+**Conclusiones principales (interpretación científica)**
+
+  1. El **tipo de VWD es el factor que más explica la Puntuación Hemorrágica**
+(prácticamente domina el modelo).
+
+  2. El **cluster genético explica más que el fenotípico**, y este último añade poco.
+
+  3. Fenotípico y genético se solapan, especialmente el fenotípico con el genético.
+
+  4. La **combinación Feno + Geno no supera a VWD solo**, porque el tipo de VWD captura la gran mayoría de la variación explicable
+  
+  
+```{r}
+z <- geno.mclust$z
+G <- ncol(z)
+
+```
+
+```{r}
+overlap <- t(z) %*% z   # G x G
+overlap_norm <- overlap / max(overlap)
+```
+
+```{r}
+d_clusters <- as.dist(1 - overlap_norm)
+hc_meta <- hclust(d_clusters, method = "average")
+plot(hc_meta, main = "Metacluster hierarchy based on probabilistic overlap")
+
+```
+```{r echo=FALSE}
+K_meta <- 11
+meta_clusters <- cutree(hc_meta, k = K_meta)
+```
+
+```{r}
+cluster_max <- apply(z, 1, which.max)
+meta_assignment <- meta_clusters[cluster_max]
+table(meta_assignment)
+```
+
+
+
+```{r}
+heatmap(
+  overlap_norm,
+  symm = TRUE,
+  margins = c(6,6),
+  main = "Probabilistic overlap between Mclust clusters"
+)
+
+```
+

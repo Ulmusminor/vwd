@@ -1,0 +1,585 @@
+Puntuación_hemorrágica,FVW_RCo_FVW_Ag_LC1,N_A1,N_var_ACMG,N_var_EVE,Score_TOP_Impacte,ID,Género,Grupo_sanguíneo,Análisis_multimérico_baja_LC1_resum,Análisis_multimérico_alta_LC1_resum,clusteres,Puntuacion_Hemorragica,Tipo_VWD,Severidad,Grupo_VWD
+0,1.43,0,0,1,4.341240253,1,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1,Baja,VWD1
+8,1.89,0,0,1,4.341240253,2,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+10,0.36,1,1,0,3.10889928,3,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,10,VWD_2B,Alta,VWD_2B
+10,1.67,0,1,0,1,4,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución global de todos los multiméricos,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,10,VWD_3,Alta,VWD3
+7,0.68,0,1,1,5.508800599,5,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,7,VWD_2A,Media,VWD_2A
+11,0.28,1,1,1,5.146835098,6,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,11,VWD_2A_2M,Alta,VWD_2M
+14,0.93,0,1,0,3.397423829,7,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,14,VWD_1,Alta,VWD1
+15,0.34,1,1,1,5.146835098,8,Femenino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,15,VWD_2A_2M,Alta,VWD_2M
+8,0.52,1,1,1,5.146835098,9,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,8,VWD_2A_2M,Media,VWD_2M
+26,1.2536507953595275,0,1,0,7.14,10,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,26,VWD_3,Alta,VWD3
+6,1.090582009106028,0,1,1,7.07,11,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,6,VWD_3,Media,VWD3
+6,1.08,0,1,0,4.403485881,12,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,6,VWD_1,Media,VWD1
+6,1.43,0,2,1,7,13,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,6,VWD_2N,Media,VWD_2N
+1,1.35,0,1,0,3.908939313,14,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,1,Portador_a_VWD_2N,Baja,NA
+0,1.46,0,1,0,3.908939313,15,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_2N,Baja,NA
+16,0.6,0,0,1,5.09455073,16,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,16,VWD_2M,Alta,VWD_2M
+12,0.54,0,1,1,5.508800599,17,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+3,0.56,0,1,1,5.505708821,18,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,3,VWD_2A_2M,Baja,VWD_2M
+2,0.95,0,1,1,5.552251492,19,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,2,VWD_1,Baja,VWD1
+12,0.51,1,1,1,5.146835098,20,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,12,VWD_2A_2M,Alta,VWD_2M
+4,1.12,0,1,1,7.07,21,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,4,Portador_a_VWD_3,Baja,NA
+9.186277626488204,0.06,0,1,2,4.309853564,22,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,NA,VWD_2A,NA,VWD_2A
+11,1.19,0,0,0,0,23,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,11,VWD_1,Alta,VWD1
+6,0.31,1,1,1,5.146835098,24,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,3,6,VWD_2A_2M,Media,VWD_2M
+8,0.8680515917724203,1,1,1,4.851419696,25,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,8,VWD_2A,Media,VWD_2A
+9,0.8600022928463603,2,1,1,5.146835098,26,Femenino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,9,VWD_2A_2M,Media,VWD_2M
+5,1.11,0,1,0,4.403485881,27,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+8,1.46,0,1,0,3.61564987,28,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,8,VWD_2N,Media,VWD_2N
+16,0.4569984771990822,1,1,1,4.593425596,29,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,16,VWD_2A,Alta,VWD_2A
+19,0.3,1,1,1,5.146835098,30,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,19,VWD_2A_2M,Alta,VWD_2M
+12,0.41,1,1,1,5.146835098,31,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,3,12,VWD_2A_2M,Alta,VWD_2M
+1,1.28,0,1,0,3.61564987,32,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,1,VWD_2N,Baja,VWD_2N
+12,0,0,1,1,4.283819152,33,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+12,1.24,0,0,0,0,34,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,12,VWD_1,Alta,VWD1
+12,0.78,1,1,1,5.146835098,35,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,12,VWD_2A_2M,Alta,VWD_2M
+2,1.06,0,0,0,0,36,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,2,VWD_1,Baja,VWD1
+11,0.33,1,1,1,5.146835098,37,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,11,VWD_2A_2M,Alta,VWD_2M
+14,0.8149487931506447,0,1,0,7.11302691,38,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,14,VWD_3,Alta,VWD3
+12,0.9413521330004548,0,0,1,3.135305579,39,Femenino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,12,VWD_3,Alta,VWD3
+10,1.47,0,1,1,5.552251492,40,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_1,Alta,VWD1
+7,0.43,1,1,1,5.146835098,41,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,3,7,VWD_2A_2M,Media,VWD_2M
+11,0.15,0,1,1,4.431854877,42,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,11,VWD_2A,Alta,VWD_2A
+14,0.2,0,1,1,4.290480533,43,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,14,VWD_2A,Alta,VWD_2A
+7,1.05,0,0,0,5.253369587,44,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,7,VWD_1,Media,VWD1
+2,1.18,0,0,0,5.253369587,45,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,2,VWD_1,Baja,VWD1
+4,0.66,0,0,0,1.457185956,46,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,4,VWD_2M,Baja,VWD_2M
+10,0.8924749515108739,1,1,1,5.146835098,47,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,10,VWD_2A_2M,Alta,VWD_2M
+8,1,0,1,0,3.397423829,48,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+24,0.37,1,1,0,3.712500141,49,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,24,VWD_2B,Alta,VWD_2B
+18,1.0742269991625146,0,1,1,7.07,50,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,18,VWD_3,Alta,VWD3
+13,1,0,1,1,5.552251492,51,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,13,VWD_1,Alta,VWD1
+5,1.69,0,1,1,5.552251492,52,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+8,1.45,0,1,1,5.552251492,53,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+5,1.58,0,1,0,1.457185956,54,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,5,VWD_1,Media,VWD1
+14,1.39,0,1,0,0.96,55,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,14,VWD_1,Alta,VWD1
+27,1.73,0,0,0,2.338619689,56,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,27,VWD_1,Alta,VWD1
+11,0.55,1,1,0,3.712500141,57,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,11,VWD_2B,Alta,VWD_2B
+8,0.49,1,1,0,3.712500141,58,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2B,Media,VWD_2B
+17,0.15,0,1,1,4.730995213,59,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,17,VWD_2A,Alta,VWD_2A
+8,0.42,1,1,0,3.712500141,60,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,8,VWD_2B,Media,VWD_2B
+19,0.8576679572825986,1,1,1,5.147484882,61,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,19,VWD_2A_2M,Alta,VWD_2M
+5,1.33,0,0,0,0,62,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+9,0.21,0,1,1,4.290480533,63,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,9,VWD_2A,Media,VWD_2A
+16,0.8604914333660915,2,1,1,5.146835098,64,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,16,VWD_2A_2M,Alta,VWD_2M
+8,0.58,1,1,1,5.146835098,65,Femenino,B,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,8,VWD_2A_2M,Media,VWD_2M
+7,1.57,0,1,0,4.403485881,66,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1,Media,VWD1
+10,0.56,1,1,1,5.146835098,67,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,3,10,VWD_2A_2M,Alta,VWD_2M
+15,1.09,1,1,1,5.146835098,68,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,15,VWD_2A_2M,Alta,VWD_2M
+6,1.08,1,2,1,5.146835098,69,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,6,VWD_2A_2M,Media,VWD_2M
+10,0.37,1,1,1,5.146835098,70,Femenino,B,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,10,VWD_2A_2M,Alta,VWD_2M
+3,0.38,0,1,0,3.727021345,71,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,3,VWD_2A,Baja,VWD_2A
+9,0.2,0,1,1,4.287746802,72,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2A,Media,VWD_2A
+1,0.97,0,0,0,1.457185956,73,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1H,Baja,VWD1
+-2,1.4,0,0,0,1.457185956,74,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,-2,VWD_1H,Baja,VWD1
+2,1.5,0,0,0,1.457185956,75,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,2,VWD_1H,Baja,VWD1
+6,0.2,0,0,1,5.512294267,76,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,6,VWD_2A,Media,VWD_2A
+2,0.5451279949599084,0,0,0,4.874237751,77,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_2M,Baja,VWD_2M
+1,0.74,0,0,0,4.874237751,78,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_2M,Baja,VWD_2M
+18,0.44,0,0,0,4.874237751,79,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,18,VWD_2M,Alta,VWD_2M
+0,1.03,0,1,1,5.037513503,80,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,0,VWD_1,Baja,VWD1
+11,0.68,1,1,0,3.10889928,81,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,11,VWD_2B,Alta,VWD_2B
+8,0.84,1,1,0,3.10889928,82,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,8,VWD_2B,Media,VWD_2B
+3,0.76,1,1,0,3.10889928,83,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,3,VWD_2B,Baja,VWD_2B
+13,0.79,1,1,1,4.174696533,84,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2B,Alta,VWD_2B
+18,1.31,0,0,0,3.022611361,85,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,18,VWD_1,Alta,VWD1
+4,1.28,0,0,0,3.022611361,86,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1,Baja,VWD1
+7,1.36,0,1,0,3.397423829,87,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1,Media,VWD1
+16,0.7815642657622511,0,1,1,5.234850002,88,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,16,VWD_3,Alta,VWD3
+7,1.17,0,1,0,3.61564987,89,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_2N,Media,VWD_2N
+2,1.36,0,1,0,0.99,90,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1H,Baja,VWD1
+18,0.48,1,1,1,5.146835098,91,Femenino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,18,VWD_2A_2M,Alta,VWD_2M
+3,1.42,0,0,0,0,92,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,3,VWD_1H,Baja,VWD1
+8,1.27,0,1,0,4.111973044,93,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,8,VWD_2N,Media,VWD_2N
+6,1.13,0,1,0,4.111973044,94,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,6,VWD_2N,Media,VWD_2N
+7,1.5,0,0,0,3.422345849,95,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,7,VWD_1,Media,VWD1
+14,1.45,0,0,0,3.880220724,96,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,14,VWD_1,Alta,VWD1
+10,1.33,0,1,0,3.397423829,97,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_1,Alta,VWD1
+12,1.19,0,1,0,3.397423829,98,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,12,VWD_1,Alta,VWD1
+9,0.39,1,1,1,5.287422365,99,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,9,VWD_2M,Media,VWD_2M
+10,1.13,0,0,0,4.431854877,100,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,10,Portador_a_VWD_3,Alta,NA
+6,1.18,0,0,0,4.431854877,101,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,6,Portador_a_VWD_3,Media,NA
+9,0,0,0,0,3.532978781,102,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,9,VWD_2A,Media,VWD_2A
+8,1.19,0,0,0,4.111973044,103,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,Portador_a_VWD_3,Media,NA
+0,1.19,0,1,0,3.908939313,104,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,0,Portador_a_VWD_2N,Baja,NA
+0,1.4,0,1,0,3.908939313,105,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,Portador_a_VWD_2N,Baja,NA
+4,1.21,0,0,0,4.111973044,106,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,Portador_a_VWD_3,Baja,NA
+0,1.49,0,0,0,4.435887652,107,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,Portador_a_VWD_2N,Baja,NA
+1,1.21,0,0,0,4.111973044,108,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,Portador_a_VWD_3,Baja,NA
+21,0.22,0,1,0,3.529000078,109,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,21,VWD_2A,Alta,VWD_2A
+13,0.37,0,1,0,3.529000078,110,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2A,Alta,VWD_2A
+8,0.42,0,1,0,3.529000078,111,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,8,VWD_2A,Media,VWD_2A
+11,0.56,0,1,0,3.529000078,112,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,11,VWD_2A,Alta,VWD_2A
+2,1.0990408437608143,0,1,0,2.093725611,113,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+14,0.56,1,1,0,4.723736918,114,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,14,VWD_2B,Alta,VWD_2B
+12,0.43,1,1,0,4.723736918,115,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,12,VWD_2B,Alta,VWD_2B
+3,1.36,0,1,0,8.05541199,116,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,3,Portador_a_VWD_3,Baja,NA
+12,1.39,0,1,0,3.397423829,117,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,12,VWD_1,Alta,VWD1
+8,1.71,0,1,0,3.397423829,118,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,8,VWD_1,Media,VWD1
+-1,0.37,1,1,1,5.287422365,119,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,-1,VWD_2M,Baja,VWD_2M
+26,1.182741056147407,0,2,0,7.022427774,120,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,26,VWD_3,Alta,VWD3
+7,0.27,1,1,1,5.147484882,121,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,7,VWD_2A_2M,Media,VWD_2M
+5,1.19,0,1,0,3.397423829,122,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+5,1.75,0,1,0,7,123,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+7,0.79,0,1,0,3.397423829,124,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,7,VWD_1,Media,VWD1
+13,0.35,1,1,1,5.287422365,125,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,13,VWD_2M,Alta,VWD_2M
+10,0.8641056720830874,1,1,1,5.287422365,126,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_2M,Alta,VWD_2M
+12,1.69,0,1,0,3.397423829,127,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,12,VWD_1,Alta,VWD1
+8,0,0,1,0,3.397423829,128,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,8,VWD_1,Media,VWD1
+3,1.82,0,1,0,3.397423829,129,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,3,3,VWD_1,Baja,VWD1
+2,0.7809247317284569,0,1,0,7,130,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,2,VWD_3,Baja,VWD3
+1,0.94,0,1,1,4.1006271,131,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+1,0.81,0,1,0,3.397423829,132,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+24,1.1826398318893696,1,1,0,7.821204901,133,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,3,24,VWD_3,Alta,VWD3
+17,0,0,1,1,4.730995213,134,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,17,VWD_2A,Alta,VWD_2A
+8,0.12,0,1,1,4.730995213,135,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2A,Media,VWD_2A
+20,0.41,0,1,1,4.283819152,136,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,20,VWD_2A,Alta,VWD_2A
+18,1.6,0,1,0,3.397423829,137,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,18,VWD_1,Alta,VWD1
+7,0.52,1,1,0,3.712500141,138,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,7,VWD_2B,Media,VWD_2B
+7,0.56,1,1,0,3.712500141,139,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,7,VWD_2B,Media,VWD_2B
+8,1.0402501495362928,0,1,0,1.43505054,140,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,8,VWD_3,Media,VWD3
+6,1.61,0,0,0,3.20076378,141,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,6,VWD_1H,Media,VWD1
+16,0.6570564478133222,0,1,1,7.11302691,142,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,16,VWD_3,Alta,VWD3
+10,0,1,1,1,5.147484882,143,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,10,VWD_2A_2M,Alta,VWD_2M
+16,0,1,1,1,5.147484882,144,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,16,VWD_2A_2M,Alta,VWD_2M
+18,0.19,0,1,0,4.431854877,145,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,18,VWD_2A,Alta,VWD_2A
+7,0.32,0,1,0,4.431854877,146,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+15,0.85,1,1,0,3.789859114,147,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,15,VWD_2B,Alta,VWD_2B
+10,0.27,0,2,1,4.283819152,148,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,10,VWD_2A,Alta,VWD_2A
+1,1.97,0,0,1,5.190897568,149,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,1,VWD_1,Baja,VWD1
+6,0.36,1,1,0,5.307410345,150,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,6,VWD_2A,Media,VWD_2A
+2,0.96,0,0,0,2.045703406,151,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,2,VWD_1H,Baja,VWD1
+8,2.14,0,1,0,3.397423829,152,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+2,2.58,0,1,0,3.397423829,153,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,2,VWD_1,Baja,VWD1
+16,0.35,1,2,1,5.147484882,154,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,16,VWD_2A_2M,Alta,VWD_2M
+5,0.92,1,1,1,5.147484882,155,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,5,VWD_2A_2M,Media,VWD_2M
+10,1.45,1,1,0,2.512416149,156,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,10,VWD_2B,Alta,VWD_2B
+0,1.54,1,1,0,2.512416149,157,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,0,VWD_2B,Baja,VWD_2B
+8,0.51,1,1,1,4.851419696,158,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2A,Media,VWD_2A
+6,1.66,0,0,1,5.190897568,159,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,6,VWD_1,Media,VWD1
+5,1.46,0,0,1,5.190897568,160,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,5,VWD_1,Media,VWD1
+2,1.78,0,0,1,5.190897568,161,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,2,VWD_1,Baja,VWD1
+3,0.65,1,1,1,4.851419696,162,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,3,VWD_2A,Baja,VWD_2A
+5,0.43,0,1,0,0.5,163,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,5,VWD_2A,Media,VWD_2A
+5,0.22,0,1,0,0.5,164,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,5,VWD_2A,Media,VWD_2A
+22,0.31,0,2,0,7,165,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,22,VWD_2A,Alta,VWD_2A
+8,0.55,1,1,1,5.147484882,166,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,8,VWD_2A_2M,Media,VWD_2M
+10,0.42,1,1,0,3.712500141,167,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,10,VWD_2B,Alta,VWD_2B
+12,0.74,1,1,0,3.10889928,168,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2B,Alta,VWD_2B
+5,0.64,1,1,0,3.712500141,169,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,5,VWD_2B,Media,VWD_2B
+20,0.3,1,1,1,4.851419696,170,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,20,VWD_2A,Alta,VWD_2A
+23,0,0,0,0,5.234056353,171,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,23,VWD_3,Alta,VWD3
+16,1.2813627225907944,0,1,0,7.14,172,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,16,VWD_3,Alta,VWD3
+0,1.24,0,0,0,5.234056353,173,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,Portador_a_VWD_3,Baja,NA
+0,1.17,0,0,0,5.234056353,174,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,Portador_a_VWD_3,Baja,NA
+1,1.08,0,0,0,5.234056353,175,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+4,0.46,0,1,1,3.297779095,176,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,4,VWD_2A,Baja,VWD_2A
+10,0.57,1,1,0,7,177,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,10,VWD_2A,Alta,VWD_2A
+-2,1.14,0,0,0,5.234056353,178,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,-2,Portador_a_VWD_3,Baja,NA
+-1,1.15,0,0,0,5.234056353,179,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,-1,Portador_a_VWD_3,Baja,NA
+14,0.55,0,0,0,4.431854877,180,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,14,VWD_2A,Alta,VWD_2A
+12,0.49,1,1,0,4.192443843,181,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,12,VWD_2M,Alta,VWD_2M
+0,0.88,0,1,1,5.086857762,182,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,0,VWD_1,Baja,VWD1
+17,1.33,0,1,0,3.776032655,183,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,17,VWD_1,Alta,VWD1
+13,0.8114985850674422,0,1,1,4.283819152,184,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2A,Alta,VWD_2A
+0,0.91,0,1,1,7.07,185,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_3,Baja,NA
+18,1.1571212689830264,0,1,0,7,186,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,18,VWD_3,Alta,VWD3
+22,0.5569873247150816,1,1,0,5.307410345,187,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,22,VWD_2A,Alta,VWD_2A
+10,0.88,0,0,0,2.045703406,188,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_1H,Alta,VWD1
+9,1.18,0,1,1,5.473463208,189,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,9,VWD_1,Media,VWD1
+14,1.12,0,1,1,5.473463208,190,Femenino,B,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,14,VWD_1,Alta,VWD1
+4,1.45,0,1,1,5.473463208,191,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,4,VWD_1,Baja,VWD1
+7,1.1,0,1,1,5.473463208,192,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,7,VWD_1,Media,VWD1
+21,1.1970559839612114,1,1,0,7.821204901,193,Femenino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,21,VWD_3,Alta,VWD3
+10,0.28,1,1,2,4.963963087,194,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,10,VWD_2A,Alta,VWD_2A
+9,1.1233219831806522,0,1,0,1,195,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,9,VWD_3,Media,VWD3
+12,1.11,0,1,0,4.473931092,196,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,12,VWD_1,Alta,VWD1
+2,1.17,0,1,0,4.473931092,197,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+13,0.55,1,1,0,5.307410345,198,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,13,VWD_2A,Alta,VWD_2A
+11,1.67,0,0,0,4.431854877,199,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,11,VWD_1,Alta,VWD1
+9,1.4,0,1,0,3.397423829,200,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,9,VWD_1,Media,VWD1
+7,1.45,0,1,0,3.397423829,201,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,3,7,VWD_1,Media,VWD1
+10,0.54,0,1,0,5.115068999,202,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,10,VWD_2A,Alta,VWD_2A
+4,0.1,0,1,1,4.290480533,203,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,4,VWD_2A,Baja,VWD_2A
+14,1.28,0,1,0,3.397423829,204,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,14,VWD_1,Alta,VWD1
+8,1.25,0,1,0,3.397423829,205,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,8,VWD_1,Media,VWD1
+3,0.9,0,1,0,7,206,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_3,Baja,VWD3
+6,1.03,0,1,0,3.397423829,207,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,6,VWD_1,Media,VWD1
+13,0.82,1,1,0,3.420289868,208,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2B,Alta,VWD_2B
+9,0.28,1,1,1,4.851419696,209,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2A,Media,VWD_2A
+8,0.42,0,1,0,4.845228298,210,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,8,VWD_2A,Media,VWD_2A
+4,0.43,0,1,0,4.845228298,211,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,4,VWD_2A,Baja,VWD_2A
+20,1.45,0,2,2,7.07,212,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,20,VWD_3,Alta,VWD3
+19,1.27,0,1,0,3.397423829,213,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,19,VWD_1,Alta,VWD1
+12,1.44,0,1,0,3.397423829,214,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,12,VWD_1,Alta,VWD1
+7,1.17,0,0,0,0,215,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1,Media,VWD1
+3,1.56,0,0,0,0,216,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1,Baja,VWD1
+1,1.4,0,0,0,2.045703406,217,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1H,Baja,VWD1
+19,0.15,0,1,0,0.5,218,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,19,VWD_2M,Alta,VWD_2M
+15,0.6355121695375469,0,1,0,3.165283437,219,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,15,VWD_2A,Alta,VWD_2A
+13,1.7,0,1,0,3.397423829,220,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,13,VWD_1,Alta,VWD1
+5,1.81,0,1,0,3.397423829,221,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+3,0.92,0,1,0,0,222,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1,Baja,VWD1
+1,1.16,0,1,0,3.397423829,223,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+4,1.6,0,1,0,3.397423829,224,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1,Baja,VWD1
+0,0.77,0,1,1,5.505708821,225,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,0,VWD_2A_2M,Baja,VWD_2M
+13,1.55,0,1,0,1.335815646,226,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,13,VWD_1,Alta,VWD1
+5,1.07,0,1,1,5.037513503,227,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,5,VWD_1,Media,VWD1
+5,1.15,0,1,1,5.037513503,228,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,5,VWD_1,Media,VWD1
+8,0.81,0,0,0,0,229,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,8,VWD_1,Media,VWD1
+0,0.18,1,1,1,5.146835098,230,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,0,VWD_2A_2M,Baja,VWD_2M
+3,1.07,0,0,0,4.431854877,231,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,3,VWD_2A,Baja,VWD_2A
+5,1.02,0,0,0,4.431854877,232,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,5,VWD_2A,Media,VWD_2A
+1,0.96,0,0,0,0,233,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+6,0.79,0,0,0,5.521600663,234,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,6,VWD_1,Media,VWD1
+9,0.28,0,1,0,2.49514589,235,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,9,VWD_2A,Media,VWD_2A
+2,1.47,0,1,0,3.397423829,236,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+12,1.23828875452813,0,2,1,7.07,237,Femenino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,12,VWD_3,Alta,VWD3
+4,1.16,1,1,0,4.431854877,238,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,4,Portador_a_VWD_3,Baja,NA
+4,0.73,0,1,1,5.64565784,239,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,4,VWD_1,Baja,VWD1
+11,0.31,1,1,0,3.10889928,240,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,11,VWD_2B,Alta,VWD_2B
+7,1.23,0,1,1,5.037513503,241,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,7,VWD_1,Media,VWD1
+9,0.92,0,1,0,7,242,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,9,VWD_1,Media,VWD1
+11,0.68,1,1,1,4.851419696,243,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,11,VWD_2A,Alta,VWD_2A
+10,0.9976042598949236,0,0,0,3.328353407,244,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,10,VWD_3,Alta,VWD3
+7,0.8272284092142792,0,1,1,5.508800599,245,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+8,0.62,1,1,1,4.851419696,246,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2A,Media,VWD_2A
+15,0.8645530348042915,1,1,1,4.851419696,247,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,15,VWD_2A,Alta,VWD_2A
+2,0.88,0,1,0,4.403485881,248,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_1H,Baja,VWD1
+3,0.82,0,1,0,7.682202339,249,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,3,VWD_1,Baja,VWD1
+13,0.39,1,2,0,4.723736918,250,Masculino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,13,VWD_2B,Alta,VWD_2B
+19,1.0541522950535864,0,0,0,0,251,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,19,VWD_1,Alta,VWD1
+4,1.07,0,1,0,4.403485881,252,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,4,VWD_1,Baja,VWD1
+7,0.81,0,2,0,4.730671771,253,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_2N,Media,VWD_2N
+3,1.52,0,0,0,3.422345849,254,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,3,VWD_2M,Baja,VWD_2M
+11,1.39,0,1,0,3.61564987,255,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,11,VWD_2N,Alta,VWD_2N
+7,0.2,0,1,0,0.5,256,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2M,Media,VWD_2M
+6,0.93,1,1,1,5.146835098,257,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,6,VWD_2A_2M,Media,VWD_2M
+15,0.81,0,0,1,3.719101982,258,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,15,VWD_2A_2M,Alta,VWD_2M
+4,1.2,0,0,0,1.457185956,259,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,4,Portador_a_VWD_3,Baja,NA
+13,1.2914111044431562,0,1,0,7,260,Femenino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,13,VWD_3,Alta,VWD3
+18,1.2839793623151503,0,1,0,7,261,Femenino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,18,VWD_3,Alta,VWD3
+4,1.06,0,0,1,3.719101982,262,Masculino,A,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,4,VWD_2A_2M,Baja,VWD_2M
+0,1.58,0,1,0,4.431854877,263,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_2N,Baja,VWD_2N
+12,2,0,1,1,5.508800599,264,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,12,VWD_2A,Alta,VWD_2A
+10,0.34,0,1,0,5.244726041,265,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_2M,Alta,VWD_2M
+11,0.61,0,1,0,3.61564987,266,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,11,VWD_2N,Alta,VWD_2N
+0,1.53,0,0,0,2.093725611,267,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,VWD_1,Baja,VWD1
+13,1.1191759589357355,0,1,0,0.96,268,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,13,VWD_3,Alta,VWD3
+19,1.0939803441413554,0,2,0,7.022427774,269,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,19,VWD_3,Alta,VWD3
+-3,1.49,0,1,0,0.99,270,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,-3,VWD_3,Baja,VWD3
+5,1.12,0,0,0,0.76,271,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,5,VWD_1,Media,VWD1
+3,0.88,0,0,1,6.122149769,272,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,3,VWD_1,Baja,VWD1
+5,1.36,0,1,0,3.908939313,273,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,Portador_a_VWD_2N,Media,NA
+0,1.62,0,1,0,3.908939313,274,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_2N,Baja,NA
+9,1.82,0,1,1,5.508800599,275,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,9,VWD_2A,Media,VWD_2A
+13,0.65,0,1,1,4.283819152,276,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,13,VWD_2A,Alta,VWD_2A
+15,1.07,0,1,1,4.283819152,277,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,15,VWD_2A,Alta,VWD_2A
+12,0.4,0,1,1,4.283819152,278,Masculino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,12,VWD_2A,Alta,VWD_2A
+0,1.25,0,1,0,3.397423829,279,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,3,0,VWD_1,Baja,VWD1
+5,1.16,0,1,0,3.397423829,280,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+20,1.0927076222315686,0,2,0,7.022427774,281,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,20,VWD_3,Alta,VWD3
+2,0.94,0,0,1,5.190897568,282,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+1,0.72,0,0,1,5.190897568,283,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,1,VWD_1,Baja,VWD1
+16,0.68,1,1,0,3.712500141,284,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,16,VWD_2B,Alta,VWD_2B
+12,1.96,0,1,1,5.508800599,285,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+4,0.55,1,1,0,3.10889928,286,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,4,VWD_2B,Baja,VWD_2B
+5,0.93,3,3,0,7.821204901,287,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,5,VWD_1,Media,VWD1
+0,0.73,0,0,0,2.546314922,288,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,0,VWD_1H,Baja,VWD1
+11,0.7847242914096633,1,0,0,7,289,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,11,VWD_3,Alta,VWD3
+7,0.95,0,0,0,0,290,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,7,VWD_1,Media,VWD1
+3,0.67,1,1,0,3.712500141,291,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,3,VWD_2B,Baja,VWD_2B
+1,0.98,0,1,0,0,292,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+9,0.23,1,1,1,5.146835098,293,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,9,VWD_2A_2M,Media,VWD_2M
+10,1.22,0,1,1,5.635680493,294,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,10,VWD_2M,Alta,VWD_2M
+16,0.8511537314035635,1,1,1,4.851419696,295,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,16,VWD_2A,Alta,VWD_2A
+2,0.8944276319945323,1,1,1,4.851419696,296,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,2,VWD_2A,Baja,VWD_2A
+3,0.33,1,1,0,3.831585587,297,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_2M,Baja,VWD_2M
+2,0.4,1,1,0,4.051585587,298,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_2M,Baja,VWD_2M
+9,0.8605092671021387,1,1,1,4.851419696,299,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2A,Media,VWD_2A
+7,0,0,1,0,3.529000078,300,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,7,VWD_2A,Media,VWD_2A
+5,0.8270875240954538,0,1,1,4.283819152,301,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,5,VWD_2A,Media,VWD_2A
+15,0.8446513965151723,1,1,1,4.851419696,302,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,15,VWD_2A,Alta,VWD_2A
+11,0.09,1,1,1,4.851419696,303,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,11,VWD_2A,Alta,VWD_2A
+14,0.13,1,1,2,5.55738953,304,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,14,VWD_2A,Alta,VWD_2A
+14,1.0248679337515276,0,2,0,0.93,305,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,14,VWD_3,Alta,VWD3
+16,0.8457137675028875,1,1,1,4.851419696,306,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,16,VWD_2A,Alta,VWD_2A
+7,0.871961429907496,1,1,1,4.851419696,307,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+4,0.98,0,0,0,0.76,308,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1H,Baja,VWD1
+7,0.85,0,0,0,0.235412353,309,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,7,VWD_1H,Media,VWD1
+9,0.31,0,1,0,3.285140575,310,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2A,Media,VWD_2A
+1,1,0,0,1,5.190897568,311,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+8,0.8687727064647854,1,1,1,4.851419696,312,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,8,VWD_2A,Media,VWD_2A
+3,1.17,0,1,0,3.397423829,313,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1,Baja,VWD1
+18,0.69,0,1,1,5.508800599,314,Femenino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,18,VWD_2A,Alta,VWD_2A
+12,0.8600765899718286,1,1,1,4.851419696,315,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+10,0.8607669269941718,1,1,1,4.851419696,316,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,10,VWD_2A,Alta,VWD_2A
+11,0.67,0,1,0,3.776032655,317,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,11,VWD_2M,Alta,VWD_2M
+0,0.64,0,1,0,3.776032655,318,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,VWD_2M,Baja,VWD_2M
+10,0.8596542475936978,1,1,1,4.851419696,319,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,10,VWD_2A,Alta,VWD_2A
+6,0.95,0,0,1,3.719101982,320,Masculino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,6,VWD_2A_2M,Media,VWD_2M
+8,0.8322275631610547,2,2,2,4.851419696,321,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2A,Media,VWD_2A
+6,0.15,1,1,1,4.851419696,322,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,6,VWD_2A,Media,VWD_2A
+3,0.23,0,1,0,3.165283437,323,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,3,VWD_2A,Baja,VWD_2A
+12,0.8525331354138542,1,1,1,4.851419696,324,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+1,0.88,0,1,1,3.776032655,325,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,1,VWD_1,Baja,VWD1
+2,0.8874112319725184,1,1,1,4.851419696,326,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,2,VWD_2A,Baja,VWD_2A
+1,0.85,0,1,0,3.776032655,327,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+0,0.75,0,0,0,4.431854877,328,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_3,Baja,NA
+6,0.8744909018436873,1,1,1,4.851419696,329,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,6,VWD_2A,Media,VWD_2A
+3,0.8816846360669023,1,1,1,4.851419696,330,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,3,VWD_2A,Baja,VWD_2A
+4,0.51,0,0,0,3.20076378,331,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,4,VWD_1H,Baja,VWD1
+9,0.41,1,1,0,3.420289868,332,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,9,VWD_2B,Media,VWD_2B
+12,0.83,1,1,0,7.821204901,333,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,12,VWD_3,Alta,VWD3
+3,0.87,1,1,0,7.821204901,334,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,3,VWD_3,Baja,VWD3
+1,0.18,0,0,1,5.202942963,335,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_2M,Baja,VWD_2M
+0,0.96,0,0,0,0,336,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1H,Baja,VWD1
+11,0.65,0,1,0,2.045703406,337,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,11,VWD_1H,Alta,VWD1
+3,0.9,0,1,0,4.403485881,338,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1H,Baja,VWD1
+2,0.83,0,1,0,2.182978388,339,No asignado _ especificado,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,2,VWD_2A,Baja,VWD_2A
+10,0.28,1,1,1,4.851419696,340,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,10,VWD_2A,Alta,VWD_2A
+19,1.1113005644861829,0,1,0,0.96,341,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,19,VWD_3,Alta,VWD3
+8,0.93,0,0,0,2.093725611,342,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+7,0.77,0,0,0,2.1e-8,343,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1,Media,VWD1
+6,0.66,0,1,1,5.508800599,344,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,6,VWD_2A,Media,VWD_2A
+6,0.56,0,1,1,5.508800599,345,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,6,VWD_2A,Media,VWD_2A
+10,0.8135368003348571,0,1,1,5.508800599,346,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,10,VWD_2A,Alta,VWD_2A
+9,0.95,0,2,0,7.14,347,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,9,VWD_2N,Media,VWD_2N
+0,0.85,0,1,0,7.14,348,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,3,0,VWD_3,Baja,VWD3
+2,0.8,0,1,0,7.14,349,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_3,Baja,VWD3
+2,0.46,0,1,1,5.508800599,350,Masculino,B,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,4,2,VWD_2A,Baja,VWD_2A
+3,0.98,0,1,0,3.908939313,351,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_2N,Baja,VWD_2N
+0,0.87,0,0,0,1.457185956,352,Femenino,B,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,0,VWD_1,Baja,VWD1
+13,0.3,1,1,0,3.712500141,353,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,13,VWD_2A,Alta,VWD_2A
+17,0.5032275413026056,0,1,0,5.244726041,354,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,17,VWD_2M,Alta,VWD_2M
+8,0.5239779826429912,0,1,0,5.244726041,355,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_2M,Media,VWD_2M
+2,1,0,0,0,1.457185956,356,Femenino,0,Análisis_multimérico_baja_LC1_resum_Smear,Análisis_multimérico_alta_LC1_resum_Patrón de bandas anormal,5,2,VWD_1,Baja,VWD1
+21,1.0784824707755116,0,1,1,7.07,357,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,21,VWD_3,Alta,VWD3
+-1,1.04,0,0,0,4.431854877,358,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,-1,Portador_a_VWD_3,Baja,NA
+6,0.11,0,1,0,2.49514589,359,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,6,VWD_2A,Media,VWD_2A
+14,0.73,0,0,0,0,360,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,14,VWD_1,Alta,VWD1
+10,0.9130643008504136,0,2,0,5.179372348,361,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_3,Alta,VWD3
+23,0,0,1,1,4.730995213,362,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,23,VWD_2A,Alta,VWD_2A
+21,0.68,0,0,0,4.929210222,363,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,21,VWD_2M,Alta,VWD_2M
+11,0,2,1,1,5.190897568,364,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,11,VWD_3,Alta,VWD3
+0,0.65,0,1,0,0.82,365,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_3,Baja,NA
+12,0.37,0,1,0,4.431854877,366,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,12,VWD_2M,Alta,VWD_2M
+5,0.4,0,1,0,3.793077486,367,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_2M,Media,VWD_2M
+4,1.2213263933787597,0,1,1,7.07,368,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,4,VWD_3,Baja,VWD3
+8,0.5,0,1,0,7.682202339,369,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,8,VWD_3,Media,VWD3
+13,0.8123259124493419,0,1,1,4.283819152,370,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2A,Alta,VWD_2A
+21,0.19,0,1,1,4.283819152,371,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,21,VWD_2A,Alta,VWD_2A
+1,0.09,0,1,1,4.730995213,372,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,1,VWD_2A,Baja,VWD_2A
+2,0.9540284511621484,0,1,1,7.12,373,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,2,VWD_3,Baja,VWD3
+3,0.8550902693483599,0,1,1,4.730995213,374,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,3,VWD_2A,Baja,VWD_2A
+1,0.775200961992959,0,1,0,0.99,375,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,1,VWD_3,Baja,VWD3
+3,0.94,0,0,1,5.190897568,376,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,3,VWD_1,Baja,VWD1
+4,0.45,1,1,0,4.723736918,377,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,4,VWD_2B,Baja,VWD_2B
+4,0.9232703880207916,0,2,0,7.682202339,378,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,4,VWD_3,Baja,VWD3
+8,0.17,0,1,0,3.793077486,379,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,8,VWD_2M,Media,VWD_2M
+13,0.56,1,1,0,3.10889928,380,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,13,VWD_2B,Alta,VWD_2B
+8,0.16,0,1,1,4.730995213,381,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,8,VWD_2A,Media,VWD_2A
+5,0,0,1,1,4.730995213,382,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,5,VWD_2A,Media,VWD_2A
+10,0.17,0,1,1,4.730995213,383,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,10,VWD_2A,Alta,VWD_2A
+6,0.14,0,1,1,4.730995213,384,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,6,VWD_2A,Media,VWD_2A
+0,0.94,0,1,0,1.43505054,385,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,0,VWD_1H,Baja,VWD1
+8,1.05271435993442,0,1,0,7.03,386,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,8,VWD_3,Media,VWD3
+0,1.03,0,1,0,7.03,387,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_3,Baja,NA
+4,1.0384373788246757,0,2,1,5.037513503,388,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,4,VWD_3,Baja,VWD3
+4,0.91,0,1,1,5.037513503,389,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1H,Baja,VWD1
+-1,0.82,0,1,0,0.96,390,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,-1,Portador_a_VWD_3,Baja,NA
+10,1.2056864371090743,1,1,0,7.821204901,391,Masculino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,10,VWD_3,Alta,VWD3
+0,0.84,1,1,0,7.821204901,392,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,Portador_a_VWD_3,Baja,NA
+1,0.82,1,1,0,7.821204901,393,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,1,Portador_a_VWD_3,Baja,NA
+7,0.16,0,1,1,4.730995213,394,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+7,1.2210231541569194,1,1,0,7.821204901,395,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,7,VWD_3,Media,VWD3
+5,0.34,0,1,0,5.244726041,396,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,5,VWD_2M,Media,VWD_2M
+3,1.05,0,1,0,7,397,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1,Baja,VWD1
+3,0.71,1,0,0,0.704833165,398,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_2M,Baja,VWD_2M
+4,0.6859260645717032,0,2,0,5.244726041,399,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,4,VWD_2M,Baja,VWD_2M
+12,1.2129411163827246,0,1,0,7,400,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,12,VWD_3,Alta,VWD3
+3,0.39,0,1,0,3.793077486,401,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_2M,Baja,VWD_2M
+10,1,0,0,1,4.341240253,402,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,10,VWD_1,Alta,VWD1
+7,0.22,0,1,0,3.793077486,403,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_2M,Media,VWD_2M
+9,0.37,0,1,0,3.793077486,404,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2M,Media,VWD_2M
+2,0.28,0,1,0,3.793077486,405,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_2M,Baja,VWD_2M
+3,1.1,1,1,0,2.98829409,406,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,3,VWD_2B,Baja,VWD_2B
+9,0.82,0,0,1,5.190897568,407,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,9,VWD_1,Media,VWD1
+8,1,0,0,1,5.190897568,408,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+0,0.95,1,1,0,2.98829409,409,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,0,VWD_2B,Baja,VWD_2B
+11,0.38,0,1,2,5.55738953,410,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,11,VWD_2A,Alta,VWD_2A
+4,1,0,1,0,0,411,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,4,VWD_1,Baja,VWD1
+7,0.96,0,1,0,0,412,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,7,VWD_1H,Media,VWD1
+4,0.91,0,1,0,0,413,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,4,VWD_1,Baja,VWD1
+11,0.15,0,1,0,3.727021345,414,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,11,VWD_2A,Alta,VWD_2A
+14,0.21,0,1,0,3.727021345,415,No asignado _ especificado,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,14,VWD_2A,Alta,VWD_2A
+10,0.21,0,1,0,3.727021345,416,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,10,VWD_2A,Alta,VWD_2A
+7,0.94,0,1,0,0.9,417,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1,Media,VWD1
+9,0.85,0,1,0,3.397423829,418,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,9,VWD_1,Media,VWD1
+6,0.24,0,1,0,3.529000078,419,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,6,VWD_2A,Media,VWD_2A
+9,0.5132855561485196,0,1,0,3.529000078,420,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,9,VWD_2A,Media,VWD_2A
+11,0.38,1,1,1,5.252469953,421,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,11,VWD_2A,Alta,VWD_2A
+3,1.06,0,1,0,3.908939313,422,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_2N,Baja,VWD_2N
+7,0.59,0,1,0,3.529000078,423,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,7,VWD_2A,Media,VWD_2A
+15,0.75,1,1,0,4.723736918,424,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,15,VWD_2B,Alta,VWD_2B
+0,1.17,0,1,0,4.583558902,425,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1,Baja,VWD1
+8.827576413771483,1.18,0,0,0,1.63246948,426,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,NA,VWD_1H,NA,VWD1
+6.175117026029829,0.9781391807294604,1,1,1,4.666830376,427,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,NA,VWD_1H,NA,VWD1
+6.116264728652767,0.87,1,1,1,4.666830376,428,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,NA,VWD_1H,NA,VWD1
+0,0.99,0,1,1,5.554351803,429,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,0,VWD_1,Baja,VWD1
+0,0.58,0,0,1,4.1006271,430,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,0,VWD_2M,Baja,VWD_2M
+4,0.88,0,1,0,3.397423829,431,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,4,VWD_1,Baja,VWD1
+3,1.17,0,0,0,0,432,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1H,Baja,VWD1
+8,1.05,0,0,0,0.41,433,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1H,Media,VWD1
+0,1.02,0,1,0,4.129445322,434,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,0,Portador_a_VWD_2N,Baja,NA
+7,0.94,0,1,0,3.29615654,435,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,7,7,VWD_3,Media,VWD3
+7,0.6,0,1,0,3.727021345,436,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+8,1.26,0,0,0,3.789859114,437,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,8,VWD_1H,Media,VWD1
+12,0.46,0,1,0,3.529000078,438,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2A,Alta,VWD_2A
+8,0.33,0,1,0,3.529000078,439,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,8,VWD_2A,Media,VWD_2A
+7,0.98,0,0,0,3.422345849,440,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_2M,Media,VWD_2M
+9,1.26,0,1,0,7,441,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,9,Portador_a_VWD_3,Media,NA
+12,0.9,0,0,1,5.428493599,442,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,12,VWD_1,Alta,VWD1
+7,1.02,0,0,0,0,443,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,7,VWD_1,Media,VWD1
+19,0.83,0,1,0,3.397423829,444,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,19,VWD_1,Alta,VWD1
+13,0.52,0,1,0,3.397423829,445,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,13,VWD_1,Alta,VWD1
+7,0.66,0,1,0,3.397423829,446,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,7,VWD_1,Media,VWD1
+0,1.01,0,1,0,3.908939313,447,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,VWD_2N,Baja,VWD_2N
+0,0.97,0,1,0,4.403485881,448,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1H,Baja,VWD1
+4,0.98,0,0,0,1.585406768,449,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,4,VWD_1,Baja,VWD1
+25,0.55,1,1,0,3.328353407,450,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,4,25,VWD_3,Alta,VWD3
+5,1.13,0,0,0,0,451,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+8,1.19,0,1,1,5.505708821,452,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,8,VWD_1,Media,VWD1
+1,1.11,0,0,0,2.045703406,453,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1H,Baja,VWD1
+3,0.98,0,0,0,5.521600663,454,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,3,VWD_1,Baja,VWD1
+9,1.1,0,0,0,1.43505054,455,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,9,VWD_1H,Media,VWD1
+3,0.27,1,1,0,3.712500141,456,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,3,VWD_2B,Baja,VWD_2B
+4,1.67,1,1,0,7.821204901,457,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,4,VWD_3,Baja,VWD3
+0,1.67,1,1,0,7.821204901,458,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,0,VWD_3,Baja,VWD3
+19,1.13,0,1,0,4.403485881,459,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,19,VWD_1H,Alta,VWD1
+8,1,0,1,1,4.513669989,460,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,8,VWD_1,Media,VWD1
+10,0.93,0,1,0,3.908939313,461,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_2N,Alta,VWD_2N
+6,1.09,0,0,2,4.789538021,462,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,6,VWD_1H,Media,VWD1
+4,1.18,0,0,1,5.534887763,463,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,4,VWD_1,Baja,VWD1
+0,0.76,0,0,0,3.422345849,464,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,0,VWD_2M,Baja,VWD_2M
+21,1.12,0,0,1,5.465873918,465,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,21,VWD_1H,Alta,VWD1
+-1,0.63,0,0,0,3.422345849,466,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,-1,VWD_2M,Baja,VWD_2M
+0,0.47,1,1,0,4.723736918,467,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,0,VWD_2B,Baja,VWD_2B
+18,1.13,0,0,1,5.190897568,468,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,18,VWD_1,Alta,VWD1
+2,1.04,0,0,1,5.190897568,469,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,2,VWD_1,Baja,VWD1
+13,0.43,1,1,0,3.712500141,470,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,13,VWD_2B,Alta,VWD_2B
+8,1.75,0,0,0,4.431854877,471,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,8,VWD_1,Media,VWD1
+8,0.1,1,1,1,5.486815793,472,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,8,VWD_2A,Media,VWD_2A
+16,0.08,1,1,1,5.486815793,473,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,16,VWD_2A,Alta,VWD_2A
+9,0.14,1,1,1,5.486815793,474,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,9,VWD_2A,Media,VWD_2A
+13,0.42,0,1,0,3.529000078,475,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,13,VWD_2A,Alta,VWD_2A
+3,1.25,0,1,0,1,476,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,Portador_a_VWD_3,Baja,NA
+5,0.86,0,1,1,5.037513503,477,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,7,5,VWD_3,Media,VWD3
+9,0.93,0,1,0,4.403485881,478,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,9,VWD_1H,Media,VWD1
+6,0.18,0,0,0,2.965184023,479,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,6,VWD_2M,Media,VWD_2M
+5,1.19,0,0,0,2.045703406,480,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1H,Media,VWD1
+5,1.33,0,0,0,2.045703406,481,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,5,VWD_1H,Media,VWD1
+7,1.09,0,1,0,7.06,482,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,7,VWD_1H,Media,VWD1
+4,1.67,0,1,0,7.022427774,483,Masculino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Aumento de la proporción relativa de las bandas satélites,7,4,VWD_3,Baja,VWD3
+12,0.53,1,1,0,3.420289868,484,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,12,VWD_2B,Alta,VWD_2B
+5,0.64,0,0,0,3.422345849,485,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,5,VWD_2M,Media,VWD_2M
+5,0.63,0,0,0,4.976344512,486,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,5,VWD_2A,Media,VWD_2A
+6,0.98,0,1,1,4.57893152,487,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,6,VWD_1,Media,VWD1
+2,0.16,0,1,1,4.290480533,488,Masculino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,2,VWD_2A,Baja,VWD_2A
+12,0.51,0,1,0,3.529000078,489,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,12,VWD_2A,Alta,VWD_2A
+0,0.28,0,2,0,7.682202339,490,Masculino,B,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,4,0,VWD_3,Baja,VWD3
+0,0.31,0,2,1,7.022427774,491,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Normal,1,0,VWD_3,Baja,VWD3
+21,0.47,0,1,0,3.727021345,492,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,21,VWD_2A,Alta,VWD_2A
+1,1.19,2,1,0,3.037572549,493,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,1,VWD_2B,Baja,VWD_2B
+0,1,0,0,1,5.190897568,494,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,0,VWD_1,Baja,VWD1
+4,1.05,0,0,1,5.190897568,495,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,4,VWD_1,Baja,VWD1
+9,0.94,1,1,0,7.821204901,496,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,9,VWD_1,Media,VWD1
+1,1,0,0,0,3.789859114,497,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,1,VWD_1H,Baja,VWD1
+3,0.86,0,0,0,3.725234789,498,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1,Baja,VWD1
+6,0.89,0,0,1,5.190897568,499,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,6,VWD_1,Media,VWD1
+6,0.93,0,1,0,3.316654332,500,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,6,VWD_2M,Media,VWD_2M
+9,0.98,0,1,0,3.316654332,501,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,9,VWD_2M,Media,VWD_2M
+6,0.91,0,1,0,3.316654332,502,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,6,VWD_2M,Media,VWD_2M
+12,0.82,0,1,0,3.316654332,503,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,12,VWD_2M,Alta,VWD_2M
+7,0.84,0,1,0,3.316654332,504,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,7,VWD_2M,Media,VWD_2M
+4,0.85,1,1,1,4.666830376,505,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1H,Baja,VWD1
+4,0.83,1,1,1,4.666830376,506,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,4,VWD_1H,Baja,VWD1
+0,0.78,1,2,1,4.666830376,507,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1H,Baja,VWD1
+0,0.34,0,1,0,2.49514589,508,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Normal,2,0,VWD_2A,Baja,VWD_2A
+7,0.2,0,0,1,5.396083693,509,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,7,VWD_2A,Media,VWD_2A
+6,0.21,0,0,1,5.396083693,510,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,6,VWD_2A,Media,VWD_2A
+3,1.22,0,0,0,0.41,511,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1H,Baja,VWD1
+3,1.26,0,0,0,2.875654208,512,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,3,VWD_1,Baja,VWD1
+4,1.06,0,0,0,0.5,513,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,4,VWD_1,Baja,VWD1
+15,1.0191242784497851,0,1,0,3.908939313,514,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,15,VWD_2N,Alta,VWD_2N
+13,0.54,0,2,1,4.513669989,515,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,13,VWD_1,Alta,VWD1
+9,0.7,0,1,0,3.7317260820000002,516,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,9,VWD_1,Media,VWD1
+3,0.7,0,1,0,3.7317260820000002,517,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,3,VWD_1,Baja,VWD1
+1,0.45,0,2,1,5.522887346,518,Masculino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,1,VWD_2A,Baja,VWD_2A
+3,0.75,0,1,0,4.403485881,519,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1,Baja,VWD1
+0,0.73,0,0,0,4.431854877,520,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1H,Baja,VWD1
+2,0.96,0,1,0,3.908939313,521,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,2,Portador_a_VWD_2N,Baja,NA
+2,1.02,0,1,0,3.908939313,522,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,Portador_a_VWD_2N,Baja,NA
+4,1.02,0,1,0,3.908939313,523,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,4,Portador_a_VWD_2N,Baja,NA
+4,1.13,0,0,0,2.093725611,524,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,4,VWD_1H,Baja,VWD1
+5,0.4,0,1,0,5.244726041,525,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,5,VWD_2M,Media,VWD_2M
+1,1.12,0,1,0,3.908939313,526,Femenino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,1,Portador_a_VWD_2N,Baja,NA
+9,1.19,0,2,2,5.552251492,527,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,9,VWD_1H,Media,VWD1
+0,0.5497529543294375,0,0,1,4.493170869,528,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,1,0,VWD_1,Baja,VWD1
+0,0.4,0,1,0,4.50934561,529,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,0,VWD_2M,Baja,VWD_2M
+1,1.05,0,0,1,3.135305579,530,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,1,VWD_1,Baja,VWD1
+0,1.21,0,0,0,4.431854877,531,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_1H,Baja,VWD1
+6,0.31,1,1,1,4.851419696,532,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Normal,1,6,VWD_2A,Media,VWD_2A
+3,1.15,0,0,0,0,533,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1H,Baja,VWD1
+2,1.22,0,0,0,0,534,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+1,1.32,0,0,0,3.131726504,535,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,1,VWD_2M,Baja,VWD_2M
+3,0.9810851449973764,0,1,1,5.037513503,536,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,7,3,VWD_1,Baja,VWD1
+1,1.32,0,0,0,1.457185956,537,Masculino,B,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,4,1,VWD_1H,Baja,VWD1
+2,1.36,0,0,0,1.457185956,538,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1H,Baja,VWD1
+2,1.65,0,0,0,1.457185956,539,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+8,1.13,0,1,0,8.05541199,540,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,8,VWD_1,Media,VWD1
+7,1.38,0,0,0,0,541,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_1H,Media,VWD1
+2,2.26,0,0,1,5.190897568,542,Masculino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,2,VWD_1,Baja,VWD1
+9,1.23,0,1,0,3.397423829,543,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,9,VWD_1,Media,VWD1
+2,0.98,0,0,0,0,544,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_1H,Baja,VWD1
+8,0.88,0,1,0,2.045703406,545,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,8,VWD_1,Media,VWD1
+2,1.21,0,0,0,2.1e-8,546,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_1H,Baja,VWD1
+3,1.05,0,0,0,0,547,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1,Baja,VWD1
+8,0.46,5,2,1,7.821204901,548,Femenino,AB,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,3,8,VWD_2B,Media,VWD_2B
+3,0.89,0,1,0,7.682202339,549,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1H,Baja,VWD1
+0,0.93,0,1,0,3.397423829,550,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,VWD_1,Baja,VWD1
+0,1.08,0,1,0,3.397423829,551,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,0,VWD_1,Baja,VWD1
+19,0.28,1,1,0,3.712500141,552,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,19,VWD_2B,Alta,VWD_2B
+12,0.48,0,1,0,4.50934561,553,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,11,12,VWD_2M,Alta,VWD_2M
+3,0.16,0,0,1,5.512294267,554,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,3,VWD_2A,Baja,VWD_2A
+4,0.11,0,0,1,5.512294267,555,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,4,VWD_2A,Baja,VWD_2A
+7,0.53,0,1,0,3.141317648,556,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,7,VWD_2M,Media,VWD_2M
+3,1.36,0,0,0,2.1e-8,557,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,3,VWD_1,Baja,VWD1
+8,1.12,0,1,0,4.403485881,558,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,8,VWD_1,Media,VWD1
+17,1.32,0,0,0,4.111973044,559,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,17,VWD_1,Alta,VWD1
+5,1.32,0,1,0,1.457185956,560,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,5,VWD_1,Media,VWD1
+2,1.39,0,1,0,7.02,561,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_1,Baja,VWD1
+10,1.33,0,0,1,4.341240253,562,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,10,VWD_1,Alta,VWD1
+2,1.43,0,1,0,3.908939313,563,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,2,VWD_1,Baja,VWD1
+11,0.64,1,1,0,3.10889928,564,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,11,VWD_2B,Alta,VWD_2B
+8,0.57,1,1,0,3.10889928,565,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,8,VWD_2B,Media,VWD_2B
+20,0.44,1,1,0,3.712500141,566,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,20,VWD_2B,Alta,VWD_2B
+3,0.8448398367850485,1,1,1,4.851419696,567,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,3,VWD_2A,Baja,VWD_2A
+0,0.63,1,1,1,4.851419696,568,Masculino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,2,0,VWD_2A,Baja,VWD_2A
+9,0.18,0,1,0,0.5,569,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,6,9,VWD_2M,Media,VWD_2M
+15,0.36,0,0,1,4.531261652,570,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,15,VWD_2A,Alta,VWD_2A
+11,0.44,0,0,1,4.531261652,571,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,11,VWD_2A,Alta,VWD_2A
+11,0.4647052451510019,0,0,1,4.531261652,572,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,11,VWD_2A,Alta,VWD_2A
+0,0.9,0,0,0,3.422345849,573,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,0,VWD_2M,Baja,VWD_2M
+15,0.69,0,0,0,2.965184023,574,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,15,VWD_2M,Alta,VWD_2M
+3,0.96,0,0,0,1.179866448,575,Masculino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,8,3,VWD_1H,Baja,VWD1
+-2,1,0,0,0,2.045703406,576,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,-2,VWD_1H,Baja,VWD1
+1,0.77,0,1,0,7,577,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,1,VWD_1,Baja,VWD1
+11,0.84,0,1,0,7,578,Femenino,0,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,11,11,VWD_1,Alta,VWD1
+14,0.09,0,1,0,4.281732789,579,Femenino,A,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,9,14,VWD_2A,Alta,VWD_2A
+11,0,0,1,0,3.529000078,580,Femenino,0,Análisis_multimérico_baja_LC1_resum_Disminución de la proporción relativa de los multímeros de alto peso molecular,Análisis_multimérico_alta_LC1_resum_Disminución de la proporción relativa de las bandas satélites,10,11,VWD_2A,Alta,VWD_2A
+11,1.67,1,1,0,7.821204901,581,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,7,11,VWD_3,Alta,VWD3
+14,1.67,1,1,0,7.821204901,582,Femenino,A,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,7,14,VWD_3,Alta,VWD3
+0,1.34,1,1,0,7.821204901,583,Femenino,A,Análisis_multimérico_baja_LC1_resum_Normal,Análisis_multimérico_alta_LC1_resum_Normal,1,0,Portador_a_VWD_3,Baja,NA
+6,1.2430804388934251,1,1,0,7.821204901,584,Femenino,0,Análisis_multimérico_baja_LC1_resum_Ausencia de todos los multímeros,Análisis_multimérico_alta_LC1_resum_Normal,7,6,VWD_3,Media,VWD3

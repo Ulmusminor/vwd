@@ -1,0 +1,123 @@
+---
+title: "Cross Validation EVW"
+author: "Marco del Olmo"
+format:
+  html:
+    self-contained: true
+editor: visual
+---
+
+#### Librerías utilizadas
+
+```{r message=FALSE}
+library("tidyverse")
+library("fpc")
+library("missMDA")
+library("FactoMineR")
+library("mclust")
+
+set.seed(6072000)
+
+source("./scripts/preprocess_data.R")
+```
+
+## Preámbulo
+
+Este documento se encarga de realizar la validación sobre el clústering de fenogeno, que es un dataset de tipificación fenotípica y genética. El objetivo es verificar que el clústering es robusto y consistente si el entrenamiento se realiza sobre una subbase de los pacientes.
+
+## División de la base estratificada por tipo evw:
+
+```{r}
+t <- read_csv(file = "clustering_evw.txt") |> select(-'Puntuación_hemorrágica')
+
+t
+```
+
+t debería ser un tibble de 584 filas y 106 columnas (añado una llamada ID). Registramos el número de pacientes por subtipo a continuación:
+
+Ninguno de los subtipos es tan pequeño como para temer que la aleatorización sea inviable, por tanto procedemos a la aleatorización estratificada. Esto también evita que algún subtipo escape la fase de prueba.
+
+Ya no es relevante enseñar los clústeres antes de la función clusterboot, pues esta enseña los clústeres originales.
+
+Conseguí una configuración de 12 clústeres con R² también de 12%.
+
+Pasamos a hacer la imputación de los NAs. He añadido un filtro que compruebe si hay algún NA en la tabla porque si no, la función imputeFAMD da error (evidentemente, la función es inútil si no hay NAs)
+
+```{r}
+if(any(is.na(t |> select(1:16)))) {
+  t_imputado <- imputeFAMD(t |> select(1:16), ncp = 3, seed = 6072000, maxiter = 1000)$completeObs 
+} else t_imputado <- t |> select(1:16)
+```
+
+Hacemos un FAMD:
+
+```{r}
+t_famd <- FAMD(t_imputado, ncp = 10, graph = FALSE)
+```
+
+Clust:
+
+```{r}
+t_clust_res <- t_famd$ind$coord |> clusterboot(bootmethod = "subset",
+                                               subtuning = floor(nrow(t)*0.8),
+                                               clustermethod = noisemclustCBI,
+                                               k = 11,
+                                               seed = 6072000)
+```
+
+Hacemos un muestreo a través de k clústeres:
+
+```{r}
+#| include: false
+
+# Set range of k
+k_range <- 1:20
+
+# Prepare list to store results
+cb_list <- list()
+
+# Loop over k values
+for (k in k_range) {
+  cb_list[[as.character(k)]] <- clusterboot(
+    t_famd$ind$coord,
+    clustermethod = noisemclustCBI,
+    k = k,
+    bootmethod = "subset",
+    subtuning = floor(nrow(t)*0.8),
+    seed = 6072000
+  )
+  print(k)
+}
+```
+
+Aquí observamos la estabilidad de todos los clustering desde 2 a 20. Solo debemos aceptar estabilidades mayores que 0.75. Evidentemente, k = 1 tiene una estabilidad de 1 así que lo omitimos.
+
+
+## Plot
+
+```{r}
+df <- bind_rows(
+  lapply(names(cb_list), function(k_char) {
+    cb <- cb_list[[k_char]]
+    tibble(
+      k = as.integer(k_char),
+      cluster = seq_along(cb$subsetmean),
+      jaccard = cb$subsetmean
+    )
+  })
+)
+```
+
+```{r}
+ggplot(df, aes(x = factor(cluster), y = jaccard, fill = jaccard >= 0.75)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ k, scales = "free_x") +
+  scale_fill_manual(values = c("red", "green"), guide = "none") +
+  geom_hline(yintercept = 0.75, linetype = "dashed") +
+  labs(
+    x = "Cluster",
+    y = "Bootstrap Jaccard (subsetmean)",
+    title = "Cluster Stability Across k"
+  ) +
+  theme_minimal()
+```
